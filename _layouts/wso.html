@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% comment %}
+  
+    WSO layout (wso.html)
+  
+    160815 / TiM
+    - the same as default but the includes have been replaces 
+      by "wso"-counterparts
+      
+  {% endcomment %}
+
+  {% include wso_head.html %}
+
+  <body>
+
+    {% include wso_header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include wso_footer.html %}
+
+  </body>
+
+</html>

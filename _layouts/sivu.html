@@ -1,0 +1,31 @@
+---
+layout: wso
+---
+
+{% comment %}
+
+  page layout (sivu.html)
+
+  160815 / TiM
+  - the same as the default page.html but refers wso base layout instead of default  
+  - post header simplified
+  
+{% endcomment %}
+
+<article class="post">
+
+{% comment %}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+{% endcomment %}
+
+  <header>
+    <h2>{{ page.title }}</h2>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
