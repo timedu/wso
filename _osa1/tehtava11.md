@@ -9,13 +9,13 @@ Toteuta tehtäväpohjaan funktio `Puhelinmuistio`, joka luo puhelinmuistio-olioi
 
 Tehtäväpohjassa on tässä laadittavaa funktiota käyttävä valmis käyttöliittymä:
 
-![Puhelinmuistion käyttöliittymä](/osa1/img/puhelinmuistio_ui.png "Puhelinmuistion käyttöliittymä")
+![Puhelinmuistion käyttöliittymä](img/puhelinmuistio_ui.png "Puhelinmuistion käyttöliittymä")
 
 **Numeroiden lisääminen** muistioon tapahtuu kirjaamalla tiedot *Nimi*- ja *Numero*- syötekenttiin ja klikkaamalla *Lisää* -painonappia, minkä jälkeen numero tallentuu muistioon ja kaikki ko. nimeen liittyvät numerot ilmestyvät sivulle. **Numeroiden haku** suoritetaan kirjaamalla hakuehtona toimiva henkilön nimi sivun *Nimi* -kenttään ja klikkaamalla *Etsi*-painonappia. Tämän jälkeen nimeen liittyvät numerot ilmestyvät sivulle samoin kuin numeroita lisättäessä. Kunkin sivulla olevan numeron ohessa on *X* -painonappi, jota klikkaamalla **numero poistuu** sekä sivulta että muistiosta. 
 
 Numeroiden lisäämisen tulee tapahtua olion `lisaaNumero` -metodilla, ja puhelinmuistion tulee tarjota metodi `annaNumerot`, jolle annetaan parametrina henkilön nimi. Metodin tulee toimia siten, että sen palauttaman taulukon kautta ei voi muuttaa muistion sisältöä (so. metodi palauttaa numerotaulukon kopion). Puhelinmuistiosta voidaan poistaa numeroita `poistaNumero` -metodilla. Seuraavassa on puhelinmuistio esitetty UML-luokkana:
 
-![Puhelinmuistio-luokka](/osa1/img/puhelinmuistio_olio.jpeg "Puhelinmuistio-luokka")
+![Puhelinmuistio-luokka](img/puhelinmuistio_olio.jpeg "Puhelinmuistio-luokka")
 
 Metodien lisäksi puhelinmuistio-oliolla on tietojen tallettamista varten attribuutti `_henkilot` (, jonka ensimmäisenä merkkinä oleva `_` indikoi tässä sitä, että attribuuttiin ei ole tarkoitus viitata olion metodien ulkopuolelta, vaikka se JavaScript-ohjelmissa on mahdollista). Attribuutti toteutetaan oliona, jossa kutakin muistioon talletettua henkilöä vastaa taulukko-tyyppinen attribuutti henkilön numeroiden tallettamista varten. Esimerkiksi seuraavassa kuvassa `_henkilot` -oliolla on kaksi taulukko-tyyppistä attribuuttia - edellä esitettyä käyttöliittymää vastaava `Flanders` ja sen lisäksi `Bart Simpson`:  
 
