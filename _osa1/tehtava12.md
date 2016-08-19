@@ -9,11 +9,13 @@ Toteuta tehtäväpohjaan koodi, joka muodostaa olion `puhelinmuistio` siten, ett
 
 ![Puhelinmuistio-luokka](../img/puhelinmuistio_moduuli.jpeg "Puhelinmuistio-luokka")
 
-Olioon laadittava `_reset`-metodi on tarkoitettu testausta varten. Se asettaa puhelinmuistion datan alkuarvoonsa (tyhjä olio).
+Olioon laadittava `_reset`-metodi on tarkoitettu testausta varten. Se asettaa puhelinmuistion datan alkuarvoonsa (tyhjä olio). Oliokaaviona puhelinmuistio näyttää seuraavalta: 
+
+![Puhelinmuistio-olio](../img/puhelinmuistio_sulkeuma.png "Puhelinmuistio-olio")
+
+**Palauta** tehtävästä `puhelinmuistio`-olion muodostava tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
 
 Tehtäväpohjassa on laadittavaa oliota käyttävä valmis käyttöliittymä (vrt. [Tehtävä 1.1](../tehtava11)).
-
-Palauta tehtävästä `puhelinmuistio`-olion muodostava tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
 
 #### Vihjeitä ja lisätietoja
 
@@ -120,6 +122,11 @@ Palautettavan olion metodit voidaan myös määritelä anonyymifunktiona palaute
   })();
 
 {% endhighlight %}
+
+Edellä olevan koodin suorituksen jälkeinen tilanne voidaan esittää oliokaaviona  seuraavasti:
+
+![Ostoskori-olio](../img/ostoskori_sulkeuma.png "Ostoskori-olio")
+
 
 Tehtävän ratkaisussa myös seuraavat apuveuvot saattavat olla hyödyllisiä:
 [Array.prototype.includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes),
