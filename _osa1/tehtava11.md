@@ -5,23 +5,39 @@ title: Tehtävä 1.1
 
 ## Puhelinmuistio (olio)
 
-Toteuta tehtäväpohjaan funktio `Puhelinmuistio`, joka luo puhelinmuistio-olioita. Muistioon voi lisätä ja sieltä voidaan poistaa nimiä ja numeroita. Jokaiseen nimeen voi liittyä useampi numero. Jos samalle henkilölle yritetään asettaa sama numero useampaan kertaan, numero tallennetaan henkilölle vain kerran. Useammalla henkilöllä voi olla sama numero. 
+Toteuta tehtäväpohjaan funktio `Puhelinmuistio`, joka 
+[new](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) 
+-operattorilla kutsuttaessa luo puhelinmuistio-olioita. Muistioon voi lisätä ja sieltä voidaan poistaa nimiä ja numeroita. Jokaiseen nimeen voi liittyä useampi numero. Jos samalle henkilölle yritetään asettaa sama numero useampaan kertaan, numero tallennetaan henkilölle vain kerran. Useammalla henkilöllä voi olla sama numero. Funktiolla luotavien olioiden rakenne voidaan esittää seuraavanlaisena UML-luokkana [^1]:
+
+[^1]: JavaScript ei sisällä luokkia, mutta tässä funktiolla luotavien olioiden rakenne noudattaa esitetyn luokan rakennetta.
+
+![Puhelinmuistio-luokka](../img/puhelinmuistio_olio.jpeg "Puhelinmuistio-luokka")
+
+Metodien lisäksi puhelinmuistio-oliolla on tietojen tallettamista varten attribuutti `_henkilot`[^2] . Attribuutti toteutetaan oliona, jossa kutakin muistioon talletettua henkilöä vastaa taulukko-tyyppinen attribuutti henkilön numeroiden tallettamista varten. Esimerkiksi seuraavassa kuvassa `_henkilot` -oliolla on kaksi taulukko-tyyppistä attribuuttia, `Flanders` ja `Bart Simpson`, joista ensimmäinen esiintyy jäljempänä esitettyssä käyttöliittymässä.   
+
+[^2]: Attribuutin ensimmäisenä merkkinä oleva `_` indikoi tässä sitä, että attribuuttiin ei ole tarkoitus viitata olion metodien ulkopuolelta, vaikka se tässä toteutuksessa on mahdollista.
+
+![Henkilot-olio](../img/henkilot_olio.jpeg "Henkilot-olio")
+
+Tässä laadittavalla funktiolla luodaan puhelinmuistio-olioita seuraavasti:
+
+{% highlight javascript %}
+
+var puhelinmuistio = new Puhelinmuistio();
+
+{% endhighlight %}
+
+Oliokaaviona syntynyt tilanne näyttää seuraavanlaiselta:
+
+![Puhelinmuistio-rakenne](../img/puhelinmuistio_rakenne.png "Puhelinmuistio-rakenne")
+
+**Palauta** tehtävästä `Puhelinmuistio`-funktion sisältävä tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
 
 Tehtäväpohjassa on tässä laadittavaa funktiota käyttävä valmis käyttöliittymä:
 
 ![Puhelinmuistion käyttöliittymä](../img/puhelinmuistio_ui.png "Puhelinmuistion käyttöliittymä")
 
 **Numeroiden lisääminen** muistioon tapahtuu kirjaamalla tiedot *Nimi*- ja *Numero*- syötekenttiin ja klikkaamalla *Lisää* -painonappia, minkä jälkeen numero tallentuu muistioon ja kaikki ko. nimeen liittyvät numerot ilmestyvät sivulle. **Numeroiden haku** suoritetaan kirjaamalla hakuehtona toimiva henkilön nimi sivun *Nimi* -kenttään ja klikkaamalla *Etsi*-painonappia. Tämän jälkeen nimeen liittyvät numerot ilmestyvät sivulle samoin kuin numeroita lisättäessä. Kunkin sivulla olevan numeron ohessa on *X* -painonappi, jota klikkaamalla **numero poistuu** sekä sivulta että muistiosta. 
-
-Numeroiden lisäämisen tulee tapahtua olion `lisaaNumero` -metodilla, ja puhelinmuistion tulee tarjota metodi `annaNumerot`, jolle annetaan parametrina henkilön nimi. Metodin tulee toimia siten, että sen palauttaman taulukon kautta ei voi muuttaa muistion sisältöä (so. metodi palauttaa numerotaulukon kopion). Puhelinmuistiosta voidaan poistaa numeroita `poistaNumero` -metodilla. Seuraavassa on puhelinmuistio esitetty UML-luokkana:
-
-![Puhelinmuistio-luokka](../img/puhelinmuistio_olio.jpeg "Puhelinmuistio-luokka")
-
-Metodien lisäksi puhelinmuistio-oliolla on tietojen tallettamista varten attribuutti `_henkilot` (, jonka ensimmäisenä merkkinä oleva `_` indikoi tässä sitä, että attribuuttiin ei ole tarkoitus viitata olion metodien ulkopuolelta, vaikka se JavaScript-ohjelmissa on mahdollista). Attribuutti toteutetaan oliona, jossa kutakin muistioon talletettua henkilöä vastaa taulukko-tyyppinen attribuutti henkilön numeroiden tallettamista varten. Esimerkiksi seuraavassa kuvassa `_henkilot` -oliolla on kaksi taulukko-tyyppistä attribuuttia - edellä esitettyä käyttöliittymää vastaava `Flanders` ja sen lisäksi `Bart Simpson`:  
-
-![Henkilot-olio](../img/henkilot_olio.jpeg "Henkilot-olio")
-
-Palauta tehtävästä `Puhelinmuistio`-funktion sisältävä tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
 
 #### Vihjeitä ja lisätietoja
 
