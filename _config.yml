@@ -25,6 +25,9 @@ collections:
   osa1:
     output: true
     permalink: /osa1/:path/
+  osa2:
+    output: true
+    permalink: /osa2/:path/
 
 #
 # default setting (commented)
