@@ -24,7 +24,7 @@ markdown: kramdown
 collections:
   osa1:
     output: true
-    permalink: /osa1/:path/
+    permalink: /:collection/:path/
   osa2:
     output: true
     permalink: /osa2/:path/
