@@ -1,6 +1,8 @@
 ---
 layout: sivu
 title: Tehtävä 1.4
+exercise_template_name: W1E04.PuhelinmuistioD
+exercise_upload_id: 278936
 ---
 
 ## Puhelinmuistio

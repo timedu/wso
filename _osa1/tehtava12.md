@@ -1,6 +1,8 @@
 ---
 layout: sivu
 title: Tehtävä 1.2
+exercise_template_name: W1E02.PuhelinmuistioB
+exercise_upload_id: 278934
 ---
 
 ## Puhelinmuistio (moduuli)

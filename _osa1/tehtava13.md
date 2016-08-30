@@ -1,6 +1,8 @@
 ---
 layout: sivu
 title: Tehtävä 1.3
+exercise_template_name: W1E03.PuhelinmuistioC
+exercise_upload_id: 278935
 ---
 
 ## Puhelinmuistio
