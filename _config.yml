@@ -4,8 +4,10 @@
 #
 
 # Site settings
+
 title: WSO2016k
 baseurl: "/wso"
+moodle_upload_address: https://moodle2.tut.fi/mod/vpl/view.php?id=
 
 # email: your-email@domain.com
 # description: > # this means to ignore newlines until "baseurl:"
@@ -20,14 +22,14 @@ baseurl: "/wso"
 
 # Build settings
 markdown: kramdown
-
+  
 collections:
   osa1:
     output: true
     permalink: /:collection/:path/
   osa2:
     output: true
-    permalink: /osa2/:path/
+    permalink: /:collection/:path/
 
 #
 # default setting (commented)

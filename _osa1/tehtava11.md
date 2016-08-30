@@ -1,6 +1,8 @@
 ---
 layout: sivu
 title: Tehtävä 1.1
+exercise_template_name: W1E01.PuhelinmuistioA
+exercise_upload_id: 278930
 ---
 
 ## Puhelinmuistio (olio)

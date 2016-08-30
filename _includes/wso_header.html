@@ -1,13 +1,17 @@
 {% comment %}
 
   wso_header.html
+  ---------------
 
+  160830 / TiM
+  - nav is created for exercise pages 
+  
   160815 / TiM
   - the same as the default header.html
   - nav commented out
-  - 
-
+  
 {% endcomment %}
+
 
 <header class="site-header">
 
@@ -15,9 +19,8 @@
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
-{% comment %}
-
     <nav class="site-nav">
+    
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
           <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
@@ -27,16 +30,45 @@
       </a>
 
       <div class="trigger">
+
+{% comment %}
+link to download exercise template 
+----------------------------------
+{% endcomment %}
+
+{% if page.exercise_template_name != null %}          
+  <a class="page-link" href="{{site.baseurl}}/koodi_pohjat/{{page.exercise_template_name}}.zip">
+    Lataa tehtäväpohja
+  </a>      
+{% endif %}
+      
+
+{% comment %}
+link to upload exercise solution
+----------------------------------
+{% endcomment %}
+          
+{% if page.exercise_upload_id != null %}          
+  <a class="page-link" href="{{site.moodle_upload_address}}{{page.exercise_upload_id}}">
+    Palauta tehtävän ratkaisu
+  </a>      
+{% endif %}
+
+      
+{% comment %}      
+      
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
-      </div>
-    </nav>
-
+        
 {% endcomment %}
+                
+      </div> <!-- trigger -->
+      
+    </nav> <!-- site-nav -->
 
-  </div>
+  </div> <!-- wrapper -->
 
-</header>
+</header> <!-- site-header -->

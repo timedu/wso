@@ -75,6 +75,6 @@ Tehtävän ratkaisu on periatteeltaan samankaltainen kuin oheismateriaalin [kohd
 
 ![Muistutus-olio](../img/muistutus_olio_21.png "Muistutus-olio")
 
-Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita malleja, näkymiä ja/tai kontrollereita. Esimerkissä näkymän käsittelemä html-dokumentin kohta dvälitetään näkymälle muodostimen parametrina. Tehtävän ratkaisussa on tätä tarkoitusta varten omat näkymän metodinsa.
+Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita malleja, näkymiä ja/tai kontrollereita. Esimerkissä näkymän käsittelemä html-dokumentin kohta välitetään näkymälle muodostimen parametrina. Tehtävän ratkaisussa on tätä tarkoitusta varten omat näkymän metodinsa.
 
 
