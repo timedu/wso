@@ -1,6 +1,7 @@
 ---
 layout: sivu
 title: Lukemistoja
+permalink: /lukemistoja/index.html 
 ---
 
 #### Varsinainen kurssimateriaali

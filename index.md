@@ -3,34 +3,42 @@ layout: sivu
 title: Web-selainohjelmointi
 ---
 
-Opintojakson toteutuksen runko on [TTY:n Moodlessa](https://moodle2.tut.fi/course/view.php?id=9776). Tämä sivusto sisältää opintojakson tehtävien kuvaukset ja tehtäviin liittyviä opastuksia.
+Web-selainohjelmointi on nimensä mukaisesti web-sovellusten selainpäähän keskittyvä ohjelmointikurssi. Opintojakson 
+[toteutusperiaatteena](toteutus/) 
+on **ongelmakeskeinen ohjattu itseopiskelu**. Kurssi on jaettu seitsemään osaan, joista kunkin ytimen muodostaa tiettyyn teemaan keskittyvä tehtäväsarja. 
 
-Opintojakson lähtökohtana on [Helsingin yliopiston Tietojenkäsitelytieteen laitoksella](https://www.cs.helsinki.fi/) järjestettävä [samanniminen kurssi](https://www.cs.helsinki.fi/courses/582354/2015/s/k/1), jonka [materiaali ](http://web-selainohjelmointi.github.io) toimii tämän opintojakson tukena. Materiaalista on käytössä [kopio](weso/), joka ei alkuperäisestä poiketen kysy TMC-tunnusta[^1] sivun latauksen yhteydessä.
+Web-sovellusta voidaan kuvata aihepiirin johdantokurssilta tutulta kaaviolla. [Web-sovellusten][web_sovellus] käyttöliittymänä toimii [selain][selain], joka tekee [HTTP][http] – muotoisia pyyntöjä [web-palvelimelle][palvelin] joko käyttäjän tai selaimen tulkitseman koodin ohjaamana. Tyypillinen vaste pyyntöön on HTML – dokumentti, joka voi sisältää myös CSS – määreitä ja JavaScript – koodia, joko suoraan tai viitteinä ulkopuolisiin tiedostoihin.
 
-[^1]: TMC (Test My Code) - Helsingin yliopiston ohjelmointikursseilla käytössä oleva testauspalvelin.
+![Web-sovellus]({{site.baseurl}}/img/web_kaavio.png "Web-sovellus")
 
+[HTML][html] määrittelee dokumentin sisällön ja rakenteen [CSS][css] :n viimeistellessä dokumentin layoutin ja ulkoasun. [JavaScript][js] on selaimen tulkitsemaan ohjelmakoodia, joka voi muokata selaimen esittämää dokumenttia erityisen [DOM][dom] – rajapinnan kautta. JavaScript osaa myös tehdä palvelimelle, tyypillisesti asynkronisia, HTTP – pyyntöjä, mihin viitataan usein lyhenteellä [Ajax][ajax].
 
-{% comment %}
+Selain voi pyynnössään viitata staattisen HTML – dokumentin sijaan myös palvelimella sijaitsevaan, esim. [PHP][php]-kielellä laadittuun, ohjelmaan, joka suoritetaan pyynnön seurauksena. Sovellukseen voi liittyä myös tietokanta – esim. pyynnön vaste muodostetaan tietokannassa olevan tiedon perusteella. Usein käytössä on relaatiotietokanta, jota käsitellään [SQL][sql]:n avulla.
 
+[web_sovellus]: https://en.wikipedia.org/wiki/Web_application "Web-sovellus"
+[selain]: https://en.wikipedia.org/wiki/Web_browser "Web-selain"
+[http]: https://fi.wikipedia.org/wiki/HTTP  "Hypertext Transfer Protocol"
+[palvelin]: https://fi.wikipedia.org/wiki/WWW-palvelin "Web-palvelin"
+[html]: https://fi.wikipedia.org/wiki/HTML "Hypertext Markup Language"
+[css]: https://fi.wikipedia.org/wiki/CSS "Cascading Style Sheets"
+[js]: https://fi.wikipedia.org/wiki/JavaScript "JavaScript"
+[dom]: https://fi.wikipedia.org/wiki/Document_Object_Model "Document Object Model"
+[ajax]: https://fi.wikipedia.org/wiki/Ajax_%28ohjelmointi%29 "Asynchronous JavaScript And XML"
+[php]: https://fi.wikipedia.org/wiki/PHP "PHP: Hypertext Preprocessor"
+[sql]: https://fi.wikipedia.org/wiki/SQL "Structured Query Language"
 
-<div class="home">
+Tämä kurssi keskittyy selainpään ohjelmointiongelmiin. Tavoitteena on, että kurssin suoritettuaan opiskelija kykenee jäsentämään web-selaimessa toimivan sovelluksen **hallittavaksi olioista ja moduuleista** muodostuvaksi kokonaisuudeksi, osaa soveltaa selainohjelmoinnissa yleisesti käytettyjä **ohjelmakirjastoja** sekä tuntee web-selainten tarjoamia **ohjelmointirajapintoja**. Osallistujalta odotetaan ennalta ohjelmoinnin ja selainpään tekniikoiden (HTML, CSS, JavaScript) perusteiden tuntemusta. Kurssi on jäsennetty seisemään osaan seuraavasti:
 
-  <h1 class="page-heading">Posts</h1>
+1. [Oliot ja moduulit](osa1/)
+2. [Arkkitehtuurimallit (MVC)](osa2/)
+3. [Kirjastoista: jQuery, Mustache](osa3/)
+4. [Kirjastoista: AngularJS (I)](osa4/)
+5. [Kirjastoista: AngularJS (II)](osa5/)
+6. [Käyttöliittymistä: Bootstrap, Less](osa6/)
+7. [Sovellusrajapinnat](osa7/)
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+Opintojakson osat 1-6 perustuvat [Helsingin yliopiston Tietojenkäsitelytieteen laitoksella](https://www.cs.helsinki.fi/) järjestettävän [samannimisen kurssin](https://www.cs.helsinki.fi/courses/582354/2015/s/k/1) [materiaalin](http://web-selainohjelmointi.github.io) jälkiosaan (lähinnä luvut 8-20).
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
-
-{% endcomment %}
+~~~
+// Tämä sivusto täydentyy ja päivittyy kurssitoteutuksen edetessä.
+~~~

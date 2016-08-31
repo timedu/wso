@@ -54,17 +54,18 @@ link to upload exercise solution
   </a>      
 {% endif %}
 
-      
-{% comment %}      
-      
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-        
+{% comment %}
+collection links (using a brute force method ...)
+----------------------------------
 {% endcomment %}
-                
+
+{% if page.exercise_template_name == null and page.exercise_upload_id == null %}          
+  <a class="page-link" href="{{site.baseurl}}/osa1/">Osa 1</a>      
+  <a class="page-link" href="{{site.baseurl}}/osa2/">Osa 2</a>      
+  <a class="page-link" href="{{site.baseurl}}/lukemistoja/">Lukemistoja</a>      
+{% endif %}
+
+                      
       </div> <!-- trigger -->
       
     </nav> <!-- site-nav -->
