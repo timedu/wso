@@ -13,9 +13,9 @@ Kurssimateriaali on kokonaisuudessaan webissä. Tehtäväkuvaukset ja niihin lii
 
 Moodlessa on esillä myös kurssin aikataulutus: milloin kunkin osan materiaali on käytettävissä, milloin teemaa käsitellään kontaktitunneilla, ja milloin tehtävien ratkaisut tulee viimeistään palauttaa.
 
-Sivustoilta on useita viittauksia Helsingin yliopiston [Web-selainohjelmointi -kurssimateriaalin]({{site.baseurl}}/weso/) ao. kohtiin. Aineistosta on käytössä kopio, joka ei alkuperäisestä poiketen kysy TMC-tunnusta[^1] sivun latauksen yhteydessä. Ensijaisena käsikirjastona toimii [Mozillan kehittäjäsivusto](https://developer.mozilla.org/fi/). [Lukemistoja]({{site.baseurl}}/lukemistoja/)-sivulta löytyy linkkejä myös muuhun kurssin aihepiiriä käsittelevään materiaaliin. 
+Sivustoilta on useita viittauksia Helsingin yliopiston [Web-selainohjelmointi -kurssimateriaalin]({{site.baseurl}}/weso/)[^1] ao. kohtiin. Ensijaisena käsikirjastona toimii [Mozillan kehittäjäsivusto](https://developer.mozilla.org/fi/). [Lukemistoja]({{site.baseurl}}/lukemistoja/)-sivulta löytyy linkkejä myös muuhun kurssin aihepiiriä käsittelevään materiaaliin. 
 
-[^1]: TMC (Test My Code) - Helsingin yliopiston ohjelmointikursseilla käytössä oleva testauspalvelin. 
+[^1]: Aineistosta on käytössä kopio, joka ei alkuperäisestä poiketen kysy TMC-tunnusta sivun latauksen yhteydessä. TMC (Test My Code) on Helsingin yliopiston ohjelmointikursseilla käytössä oleva testauspalvelin. 
 
 #### Tehtävät
 

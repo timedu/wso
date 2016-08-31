@@ -6,7 +6,7 @@ permalink: /lukemistoja/index.html
 
 #### Varsinainen kurssimateriaali
 
-[Web-selainohjelmointi, Helsingin yliopisto 2015](/weso/) (~luvut 8-20) 
+[Web-selainohjelmointi, Helsingin yliopisto 2015]({{site.baseurl}}/weso/) (~luvut 8-20) 
 
 #### Käsikirjoja ja tutoriaaleja
 
