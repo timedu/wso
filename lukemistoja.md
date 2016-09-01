@@ -15,5 +15,15 @@ permalink: /lukemistoja/index.html
 
 #### Aihepiirin verkkokirjoja
 
+[Dive into HTML5](http://diveintohtml5.info/), Mark Pilgrim   
 [Eloquent JavaScript](http://eloquentjavascript.net),  Marijn Haverbeke      
-[Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/),  Addy Osmani  
+[Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/),  Addy Osmani
+
+
+#### Spesifikaatioita
+
+[HTML5 - A vocabulary and associated APIs for HTML and XHTML](http://www.w3.org/TR/html5/)    
+[Cascading Style Sheets](http://www.w3.org/Style/CSS/)  
+[ECMAScript Language Specification](https://tc39.github.io/ecma262/)  
+
+

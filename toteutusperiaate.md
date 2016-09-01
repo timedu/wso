@@ -4,6 +4,10 @@ title: Toteutus- ja suoritusperiaate
 permalink: /toteutus/index.html 
 ---
 
+#### Opiskeluperiaate
+
+Kurssilla oppiminen tapahtuu ongelmakeskeisesti itseopiskeluna ohjauksen tukemana (OIO).  *Ongelmakeskeisyydellä* tässä tarkoitetaan sitä, että tehtävät määrittelevät opiskeltavan aineksen. Tehtävät ratkaistaan ja niiden edellyttämät taustatiedot opiskellaan *itsenäisesti*. Kurssille on määritelty taustatiedot tarjoava kirjallinen materiaali, joka *ohjaa* tehtävien ratkaisussa. Kuhunkin teemaan liittyy johdantoteksti, jossa on viitteitä taustamateriaaliin. Jokaisen tehtävän yhteydessä on viiteet taustamateriaalin vastaaviin esimerkkeihin ja mahdollisesti myös ongelman ratkaisua tukevaan käsikirja-aineistoon. Tehtäviin saa tukea kontaktitunneilla ja Moodlen välityksellä.
+
 #### Kurssiin liittyvät sivustot
 
 Kurssimateriaali on kokonaisuudessaan webissä. Tehtäväkuvaukset ja niihin liittyvät johdanto-osat löytyvät [tältä sivustolta]({{site.baseurl}}/). Opintojakson toteutuksen runko on [TTY:n Moodlessa](https://moodle2.tut.fi/course/view.php?id=9776), jonne mm. palautetaan tehtävien ratkaisut, ja jonka työkaluilla on toteutettu kurssin [uutiskanava][uutiset] ja [keskustelu-foorumi][keskustelu]. Moodle-sivustolta on linkkejä tälle sivustolle ja päinvastoin.
@@ -25,7 +29,26 @@ Tehtäväkuvaukset löytyvät tältä sivustolta varustettuna linkeillä teoriaa
 
 Tehtävien palautuksissa käytetään Moodlen VPL -työkalua (Virtual Programming Lab), jonka kautta koodia voi myös editoida. Tarkoitus kuitenkin on, että ohjelmakoodi palautetaan työkalun kautta luettavissa olevana tiedostona. VPL osaa myös tunnistaa plagiaatit.
 
-Sovellusrungot ovat [NetBeans][netbeans] -projekteja, mutta tehtävien ratkaisu ei välttämättä edellytä NetBeansin käyttöä. 
+Sovellusrungot ovat [NetBeans][netbeans] -projekteja, mutta tehtävien ratkaisu ei välttämättä edellytä NetBeansin käyttöä. Palautettava aineisto on tyypillisesti yksittäinen tekstitiedosto.
+
+Esimerkkinä seuraavassa on kurssin ensimmäisen tehtävän sovellusrungon rakenne[^2]:
+
+~~~
+[W1E01.PuhelinmuistioA]
+   [nbproject  ]
+   [public_html]
+      [img ]
+      [js  ]
+         app.js
+         puhelinmuistio.js
+      [spec]
+      SpecRunner.html
+      index.html    
+~~~
+
+Kaaviossa hakasuluissa olevat tekstit viittaavat hakemistoihin. Esimerkissä palautettava koodi laaditaan tiedostoon `puhelinmuistio.js`. Rungossa on mukana ratkaisua tukemassa palautettavaa koodia hyödyntävä käyttöliittymä, `index.html` ja `app.js`. Muu `public_html`-hakemistossa oleva aineisto liittyy ratkaisun testaamiseen. Testitapaukset sijaitsevat `spec`-hakemistossa ja niitä voi ajaa selaismessa tiedostolla `SpecRunner.html`. Jos ratkaisussa ei käytä NetBeansia, sen käyttämä, rungossa mukana oleva hakemisto, `nbproject` on tarpeeton.
+
+[^2]: Runko on esitetty siten kuin se näkyy NetBeansin *Files* -ikkunassa. *Projects* -ikkunassa näkymä on hieman toisenlainen.
 
 #### Kontaktitunnit
 
@@ -55,11 +78,12 @@ _Arvosana (0-5)_
 
 Tehtävien laatimisen tukena käytetään [NetBeans][netbeans]-kehitysympäristöä, jonka voi ladata veloituksetta tuotteen sivustolta. Tämän kurssin tarpeisiin riittää "HTML5/JavaScript" -paketti, jossa on mukana kevyt kehitystyön tarpeisiin riittävä web-palvelin. Tehtävät voi kyllä ratkaista muullakin kalustolla. NetBeans (tai jokin muu vastaava IDE) kuitenkin ohjaa ratkaisun laatimista esim. ilmoittamalla syntaksivirheistä ja listaamalla vaihtoehtoja olion metodikutsuja kirjoitettaessa.
 
-Sovellusten käyttöliittymänä toimii [Firefox][firefox] -selain, jonka perusasennuksessa (ilman liitännäisiä) on mukana erilaisia sovelluskehittäjän apuvälineitä (esim. web-konsoli ja debuggeri). Muitakin selaimia voi käyttää, mutta palautettujen ratkaisujen läpikäynti tapahtuu Firefoxilla.
+Sovellusten käyttöliittymänä toimii [Firefox][firefox] -selain, jonka perusasennuksessa (ilman liitännäisiä) on mukana erilaisia sovelluskehittäjän apuvälineitä (esim. [web-konsoli][console] ja [debuggeri][debugger]). Muitakin selaimia voi käyttää, mutta palautettujen ratkaisujen läpikäynti tapahtuu Firefoxilla.
 
 NetBeans ja Firefox löytyvät myös luokkakoneista.
 
-
 [netbeans]: http://netbeans.org
 [firefox]: https://www.mozilla.org/fi/firefox/new/
+[console]: https://developer.mozilla.org/en-US/docs/Tools/Web_Console "Web Console" 
+[debugger]: https://developer.mozilla.org/en-US/docs/Tools/Debugger "Debugger"
 

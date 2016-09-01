@@ -5,7 +5,7 @@ title: Web-selainohjelmointi
 
 Web-selainohjelmointi on nimensä mukaisesti web-sovellusten selainpäähän keskittyvä ohjelmointikurssi. Opintojakson 
 [toteutusperiaatteena](toteutus/) 
-on **ongelmakeskeinen ohjattu itseopiskelu**. Kurssi on jaettu seitsemään osaan, joista kunkin ytimen muodostaa tiettyyn teemaan keskittyvä tehtäväsarja. 
+on **ongelmakeskeinen itseopiskelu ohjatusti** (OIO). Kurssi on jaettu seitsemään osaan, joista kunkin ytimen muodostaa tiettyyn teemaan keskittyvä tehtäväsarja. 
 
 Web-sovellusta voidaan kuvata aihepiirin johdantokurssilta tutulta kaaviolla. [Web-sovellusten][web_sovellus] käyttöliittymänä toimii [selain][selain], joka tekee [HTTP][http] – muotoisia pyyntöjä [web-palvelimelle][palvelin] joko käyttäjän tai selaimen tulkitseman koodin ohjaamana. Tyypillinen vaste pyyntöön on HTML – dokumentti, joka voi sisältää myös CSS – määreitä ja JavaScript – koodia, joko suoraan tai viitteinä ulkopuolisiin tiedostoihin.
 
@@ -27,7 +27,7 @@ Selain voi pyynnössään viitata staattisen HTML – dokumentin sijaan myös pa
 [php]: https://fi.wikipedia.org/wiki/PHP "PHP: Hypertext Preprocessor"
 [sql]: https://fi.wikipedia.org/wiki/SQL "Structured Query Language"
 
-Tämä kurssi keskittyy selainpään ohjelmointiongelmiin. Tavoitteena on, että kurssin suoritettuaan opiskelija kykenee jäsentämään web-selaimessa toimivan sovelluksen **hallittavaksi olioista ja moduuleista** muodostuvaksi kokonaisuudeksi, osaa soveltaa selainohjelmoinnissa yleisesti käytettyjä **ohjelmakirjastoja** sekä tuntee web-selainten tarjoamia **ohjelmointirajapintoja**. Osallistujalta odotetaan ennalta ohjelmoinnin ja selainpään tekniikoiden (HTML, CSS, JavaScript) perusteiden tuntemusta. Kurssi on jäsennetty seisemään osaan seuraavasti:
+Tämä kurssi keskittyy selainpään ohjelmointiongelmiin. Tavoitteena on, että kurssin suoritettuaan opiskelija kykenee jäsentämään web-selaimessa toimivan sovelluksen **hallittavaksi olioista ja moduuleista** (osat 1-2) muodostuvaksi kokonaisuudeksi, osaa soveltaa selainohjelmoinnissa yleisesti käytettyjä **ohjelmakirjastoja** (osat 3-6) sekä tuntee web-selainten tarjoamia **ohjelmointirajapintoja** (osa 7). Osallistujalta odotetaan ennalta ohjelmoinnin ja selainpään tekniikoiden (HTML, CSS, JavaScript) perusteiden tuntemusta. Kurssi on jäsennetty seisemään osaan seuraavasti:
 
 1. [Oliot ja moduulit](osa1/)
 2. [Arkkitehtuurimallit (MVC)](osa2/)
@@ -40,5 +40,5 @@ Tämä kurssi keskittyy selainpään ohjelmointiongelmiin. Tavoitteena on, että
 Opintojakson osat 1-6 perustuvat [Helsingin yliopiston Tietojenkäsitelytieteen laitoksella](https://www.cs.helsinki.fi/) järjestettävän [samannimisen kurssin](https://www.cs.helsinki.fi/courses/582354/2015/s/k/1) [materiaalin](http://web-selainohjelmointi.github.io) jälkiosaan (lähinnä luvut 8-20).
 
 ~~~
-// Tämä sivusto täydentyy ja päivittyy kurssitoteutuksen edetessä.
+// sivusto täydentyy ja päivittyy kurssitoteutuksen edetessä
 ~~~
