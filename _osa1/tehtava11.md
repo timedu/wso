@@ -33,7 +33,7 @@ Oliokaaviona syntynyt tilanne näyttää seuraavanlaiselta:
 
 ![Puhelinmuistio-rakenne](../img/puhelinmuistio_rakenne.png "Puhelinmuistio-rakenne")
 
-**Palauta** tehtävästä `Puhelinmuistio`-funktion sisältävä tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
+**Palauta** tehtävästä `Puhelinmuistio`-funktion sisältävä tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät [testit](../testit11/) menevät läpi ilman virheilmoituksia.
 
 Tehtäväpohjassa on tässä laadittavaa funktiota käyttävä valmis käyttöliittymä:
 
