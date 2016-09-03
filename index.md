@@ -7,6 +7,8 @@ Web-selainohjelmointi on nimensä mukaisesti web-sovellusten selainpäähän kes
 [toteutusperiaatteena](toteutus/) 
 on **ongelmakeskeinen itseopiskelu ohjatusti** (OIO). Kurssi on jaettu seitsemään osaan, joista kunkin ytimen muodostaa tiettyyn teemaan keskittyvä tehtäväsarja. 
 
+*Web-sovellus*
+
 Web-sovellusta voidaan kuvata aihepiirin johdantokurssilta tutulta kaaviolla. [Web-sovellusten][web_sovellus] käyttöliittymänä toimii [selain][selain], joka tekee [HTTP][http] – muotoisia pyyntöjä [web-palvelimelle][palvelin] joko käyttäjän tai selaimen tulkitseman koodin ohjaamana. Tyypillinen vaste pyyntöön on HTML – dokumentti, joka voi sisältää myös CSS – määreitä ja JavaScript – koodia, joko suoraan tai viitteinä ulkopuolisiin tiedostoihin.
 
 ![Web-sovellus]({{site.baseurl}}/img/web_kaavio.png "Web-sovellus")
@@ -26,6 +28,8 @@ Selain voi pyynnössään viitata staattisen HTML – dokumentin sijaan myös pa
 [ajax]: https://fi.wikipedia.org/wiki/Ajax_%28ohjelmointi%29 "Asynchronous JavaScript And XML"
 [php]: https://fi.wikipedia.org/wiki/PHP "PHP: Hypertext Preprocessor"
 [sql]: https://fi.wikipedia.org/wiki/SQL "Structured Query Language"
+
+*Kurssin sisältö*
 
 Tämä kurssi keskittyy selainpään ohjelmointiongelmiin. Tavoitteena on, että kurssin suoritettuaan opiskelija kykenee jäsentämään web-selaimessa toimivan sovelluksen **hallittavaksi olioista ja moduuleista** (osat 1-2) muodostuvaksi kokonaisuudeksi, osaa soveltaa selainohjelmoinnissa yleisesti käytettyjä **ohjelmakirjastoja** (osat 3-6) sekä tuntee web-selainten tarjoamia **ohjelmointirajapintoja** (osa 7). Osallistujalta odotetaan ennalta ohjelmoinnin ja selainpään tekniikoiden (HTML, CSS, JavaScript) perusteiden tuntemusta. Kurssi on jäsennetty seisemään osaan seuraavasti:
 

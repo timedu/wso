@@ -34,7 +34,7 @@ var puhelinmuistio = UusiPuhelinmuistio();
 
 Ensimmäinen olioista on `Puhelinmuistio` mutta jäkimmäinen `Object`. 
 
-**Palauta** tehtävästä tiedosto `puhelinmuistio.js`, joka määrittelee edellä kuvatut funktiot `Puhelinmuistio` ja `UusiPuhelinmuistio`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
+**Palauta** tehtävästä tiedosto `puhelinmuistio.js`, joka määrittelee edellä kuvatut funktiot `Puhelinmuistio` ja `UusiPuhelinmuistio`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät [testit](../testit11/) menevät läpi ilman virheilmoituksia.
 
 Tehtäväpohjassa on laadittavaa oliota käyttävä valmis käyttöliittymä (vrt. [Tehtävä 1.1](../tehtava11)).
 

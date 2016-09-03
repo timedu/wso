@@ -15,7 +15,7 @@ Olioon laadittava `_reset`-metodi on tarkoitettu testausta varten. Se asettaa pu
 
 ![Puhelinmuistio-olio](../img/puhelinmuistio_sulkeuma.png "Puhelinmuistio-olio")
 
-**Palauta** tehtävästä `puhelinmuistio`-olion muodostava tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
+**Palauta** tehtävästä `puhelinmuistio`-olion muodostava tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät [testit](../testit11/) menevät läpi ilman virheilmoituksia.
 
 Tehtäväpohjassa on laadittavaa oliota käyttävä valmis käyttöliittymä (vrt. [Tehtävä 1.1](../tehtava11)).
 

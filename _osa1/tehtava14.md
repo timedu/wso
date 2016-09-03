@@ -45,7 +45,7 @@ Toteutuksen tulee olla sellainen, että puhelinmuistio-olion metodit eivät viit
 
 ![Puhelinmuistio-olio](../img/puhelinmuistio_olio_14.png "Puhelinmuistio-olio")
 
-**Palauta** tehtävästä tiedosto `puhelinmuistio.js`, joka määrittelee edellä kuvatun funktion `Puhelinmuistio`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
+**Palauta** tehtävästä tiedosto `puhelinmuistio.js`, joka määrittelee edellä kuvatun funktion `Puhelinmuistio`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät [testit](../testit11/) menevät läpi ilman virheilmoituksia.
 
 Tehtäväpohjassa on laadittavaa oliota käyttävä valmis käyttöliittymä (vrt. [Tehtävä 1.1](../tehtava11)).
 
