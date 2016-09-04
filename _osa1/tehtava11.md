@@ -35,6 +35,8 @@ Oliokaaviona syntynyt tilanne näyttää seuraavanlaiselta:
 
 **Palauta** tehtävästä `Puhelinmuistio`-funktion sisältävä tiedosto `puhelinmuistio.js`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät [testit](../testit11/) menevät läpi ilman virheilmoituksia.
 
+#### Tehtäväpohjan käyttöliittymä
+
 Tehtäväpohjassa on tässä laadittavaa funktiota käyttävä valmis käyttöliittymä:
 
 ![Puhelinmuistion käyttöliittymä](../img/puhelinmuistio_ui.png "Puhelinmuistion käyttöliittymä")

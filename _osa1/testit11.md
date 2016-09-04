@@ -5,7 +5,7 @@ title: Tehtävien testeistä
 
 Tehtäväpohjat sisältävät tyypillisesti joukon testitapauksia, joita ajetaan selaimessa avaamalla pohjassa oleva dokumentti `SpecRunner.html`.  Dokumentin viittaamat testitapaukset ovat hakemistossa `spec` sijaitsevissa JavaScript -tiedostoissa. Testit on toteutettu [Jasmine](http://jasmine.github.io/) -kirjastolla, joka otetaan käyttöön verkon yli[^1].
 
-*Testien onnistuminen ja epäonnistuminen*
+#### Testien onnistuminen ja epäonnistuminen
 
 Jos SpecRunner tuo esiin sävyltään vihreän sivun, ovat testit menneet läpi. Sivulla on tällöin testitapausten luettelo, jonka otsikossa näkyy ajettujen testien kokonaismäärä ja epäonnistuneiden testien määränä on 0. 
 
@@ -17,7 +17,7 @@ Esim. testi `Puhelinmuistion käyttö: ei alusta muistiota numeroilla`[^3] edell
 * `TypeError: muistio.annaNumerot(...) is null ...`
 * `Expected 1 to equal 0.`
 
-*Osan 1 tehtävien "black box"-testitapaukset*
+#### Osan 1 tehtävien "black box"-testitapaukset
 
 Testit tutkivat ratkaisun rakennetta sekä suorittavat koodia vastaavalla tavalla kuin esimerkiksi sovelluspohjan mukana oleva käyttölittymä. Jälkimmäinen ryhmä, *Puhelinmuistion käyttö*,  sisältää kaikkien Osan 1 tehtävien osalta seuraavat 11 testiä:
 
