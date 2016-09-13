@@ -1,19 +1,23 @@
 ---
 layout: sivu
 title: Tehtävä 2.1
+exercise_upload_id: 284793
+exercise_template_name: W2E01.PuhelinmuistioE
 ---
 
 ## Puhelinmuistio
 
-Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus. Ratkaisussa on `muistio`-olioon paketoituna kullekin MVC-mallin elementille oma muodostinfunktionsa sekä funktio sovelluksen alustamista varten:
+Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus. Ratkaisussa `muistio`-olioon on paketoituna kullekin MVC-mallin elementille oma muodostinfunktionsa sekä funktio sovelluksen alustamista varten:
 
 ![Puhelinmuistio-olio](../img/muistio_olio_21.png "Puhelinmuistio-olio")
 
-Malliin (`Model`) tallennetaan puhelinmuistion data. Näkymä (`View`) rakentaa käyttöliittymän mallin datalle. Kontrolleri (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`init`) jälkeen muistio toimii seuraavan kaavion mukaan: 
+*Malliin* (`Model`) tallennetaan puhelinmuistion data. *Näkymä* (`View`) rakentaa käyttöliittymän mallin datalle. *Kontrolleri* (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`init`) jälkeen muistio toimii seuraavan kaavion mukaan: 
 
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_21.png "Puhelinmuistio-oliokaavio")
 
-Kontrollerin metodit (`etsiNumerot`, `lisaaNumero`, `poistaNumero`) on kytketty html-dokumentissa olevien panonappien click-tapahtumien käsittelijöiksi. Ne kutsuvat mallin vastaavia metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentista  (`inputNimi`, `inputNumero`) tai tapahtumaobjektista (`e`). Malli suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää näkymää muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. Näkymä rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) html-dokumentissa. Seuraavassa MVC-olioden rakenne on esitetty UML-luokkina:
+*Kontrollerin* metodit (`etsiNumerot`, `lisaaNumero`, `poistaNumero`) on kytketty html-dokumentissa olevien panonappien click-tapahtumien käsittelijöiksi. Ne kutsuvat *mallin* vastaavia metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentista  (`inputNimi`, `inputNumero`) tai tapahtumaobjektista (`e`). *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) html-dokumentissa. 
+
+Seuraavassa MVC-olioden rakenne on esitetty UML-luokkina:
 
 ![Puhelinmuistio-luokat](../img/muistio_luokat_21.png "Puhelinmuistio-luokat")
 
@@ -75,6 +79,5 @@ Tehtävän ratkaisu on periatteeltaan samankaltainen kuin oheismateriaalin [kohd
 
 ![Muistutus-olio](../img/muistutus_olio_21.png "Muistutus-olio")
 
-Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita malleja, näkymiä ja/tai kontrollereita. Esimerkissä näkymän käsittelemä html-dokumentin kohta välitetään näkymälle muodostimen parametrina. Tehtävän ratkaisussa on tätä tarkoitusta varten omat näkymän metodinsa.
-
+Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita *malleja*, *näkymiä* ja/tai *kontrollereita*. Esimerkissä *näkymän* käsittelemä html-dokumentin kohta välitetään *näkymälle* muodostimen parametrina. Tämän tehtävän ratkaisussa on tätä tarkoitusta varten omat näkymän metodinsa.
 
