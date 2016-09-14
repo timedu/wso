@@ -17,10 +17,12 @@ Edelliset lainaukset on poimittu [oheislukemiston]({{site.baseurl}}/weso/) luvus
 
 #### Tehtävät
 
-[Tehtävä 2.1](tehtava21)  
-[Tehtävä 2.2](tehtava22)  
-[Tehtävä 2.3](tehtava23)  
-[Tehtävä 2.4](tehtava24)  
+Tämä osa sisältää neljä tehtävää, joiden kaikkien ratkaisuna on ulospäin samalla tavalla toimiva puhelinmuistio-sovellus. Tehtäväpohjat sisältävät käyttöliittymän merkkauksen. Tarvittava ohjelmakoodi on sama kuin kurssin [edellisen osan](../osa1) tehtävissä, mutta nyt sovellus jäsentyy hieman toisella tavalla.
+
+[Tehtävän 2.1](tehtava21) ratkaisussa  jokaisellen MVC-mallin elementtille (Model, View, Controller) on oma muodostinfunktionsa. 
+[Tehtävässä 2.2](tehtava22) ei ole eksplisiittistä *kontrolleria* vaan sen roolin hoitaa käyttöliittymän painonappeihin sidotut tapahtumakäsittelijät. Tehtävissä 2.1 ja 2.2 *malli* (Model) pyytää *näkymää* (View) rakentamaan käyttöliittymän *mallin* datalle.
+[Tehtävässä 2.3](tehtava23) *malli* ei viittaa *näkymään* vaan *mallille* asetetaan ns. tarkkailija, joka tiedottaa *mallissa* tapahtuvista datan muutoksista. 
+[Tehtävän 2.4](tehtava24) *malli* ei kommunikoi *näkymän* kanssa suoraan eikä tarkkailijan kautta. Ratkaisussa kontrolleri toimittaa *mallin* datan *näkymälle*.
 
 
 
