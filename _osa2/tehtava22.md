@@ -21,7 +21,7 @@ Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
 ![Puhelinmuistio-luokat](../img/muistio_luokat_22.png "Puhelinmuistio-luokat")
 
-*Mallin* ja *näkymän* muodostimet ovat täysin samoja kuin [Tehtävän 2.2](../tehtava21) ratkaisussa. *Kontrollerin* roolin toteuttaa käyttöliittymän painonappien tapahtumakäsittelijäfunktiot, jotka asetetaan sovelluksen alustuksen yhteydessä (`muistio.init`).
+*Mallin* ja *näkymän* muodostimet ovat täysin samoja kuin [Tehtävän 2.1](../tehtava21) ratkaisussa. *Kontrollerin* roolin toteuttaa käyttöliittymän painonappien tapahtumakäsittelijäfunktiot, jotka asetetaan sovelluksen alustuksen yhteydessä (`muistio.init`).
 
 **Palauta** tehtävästä tiedosto `app.js`, joka sisältää sovelluksen alustuksen suorittavan funktion `muistio.init`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
 
