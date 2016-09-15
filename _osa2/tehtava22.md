@@ -23,7 +23,9 @@ Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
 *Mallin* ja *näkymän* muodostimet ovat täysin samoja kuin [Tehtävän 2.1](../tehtava21) ratkaisussa. *Kontrollerin* roolin toteuttaa käyttöliittymän painonappien tapahtumakäsittelijäfunktiot, jotka asetetaan sovelluksen alustuksen yhteydessä (`muistio.init`).
 
-**Palauta** tehtävästä tiedosto `app.js`, joka sisältää sovelluksen alustuksen suorittavan funktion `muistio.init`. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
+**Palauta** tehtävästä tiedosto `app.js`, joka sisältää sovelluksen alustuksen suorittavan funktion `muistio.init`. 
+
+Tehtäväpohjassa ei ole mukana testikoodia. Varmista kuitenkin, että sovellus toimii sitä ajamalla, kun ratkaisussa on mukana edellisen tehtävän yhteydessä laaditut ja testatut *mallin* ja *näkymän* muodostimet.
 
 Edellisten puhelinmuistio-tehtävävien tapaan pohjakoodi sisältää puhelinmuistion  käyttöliittymän merkkauksen (vrt. [Tehtävä 1.1](../../osa1/tehtava11)). Pohjassa on mukana myös [edellisen tehtävän](../tehtava21) `app.js` sekä tiedosto `puhelinmuistio.js`, joka sisältää *mallin* ja *näkymän* muodostinfunktioiden rungot.
 
