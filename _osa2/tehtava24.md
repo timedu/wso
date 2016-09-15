@@ -33,8 +33,9 @@ Edellisten tehtävävien tapaan pohjakoodi sisältää puhelinmuistion  käyttö
 
 #### Vihjeitä ja lisätietoja
 
-Tämän tehtävän voi ratkaista siten, että kopioi ensin edellisen tehtävän ratkaisusta  *mallin* ja *näkymän* muodostimet sekä alustusfunktion. *Näkymä* on valmis sellaisenaa, mutta *malli* ja *alustaja* edellyttävät pieniä muutoksia. 
+Tämän tehtävän voi ratkaista siten, että kopioi ensin edellisen tehtävän ratkaisusta  *mallin* ja *näkymän* muodostimet sekä alustusfunktion. *Näkymä* on valmis sellaisenaa, mutta *malli* ja *alustaja* edellyttävät pieniä muutoksia. Aiemmista tehtävistä poiketen tässä sovelluksen alustajan (`muistio.init`) kutsu on tiedostossa `index.html`[^2]. 
 
+[^2]: Aiemmissa tehtävissä sovelluksen alustajan kutsu on tiedostossa `app.js`.
 
 Oheismateriaalin [kohdassa 9.4]({{site.baseurl}}/weso/#9.4-MVC,-MVP,-MVVM,-...) esitellään tässä sovellettavan MVP-mallin periaate.
 
