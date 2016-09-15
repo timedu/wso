@@ -26,13 +26,13 @@ Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
 *Näkymän* muodostin on täysin sama kuin tehtävin [2.1](../tehtava21) ja [2.2](../tehtava22) ratkaisussa. *Malliin* ei talleteta edellisten tehtävien tapaan viitettä *näkymään*. Sen sijaan sovelluksen alustaja (`muistio.init`) asettaa *mallille* `tarkkailija`-funktion `asetaTarkkailija`-metodilla.
 
-**Palauta** tehtävästä tiedosto `model.js`, joka sisältää sovelluksen *mallin* muodostinfunktion. Varmista ennen palauttamista, että tehtäväpohjan sisältämät testit menevät läpi ilman virheilmoituksia.
+**Palauta** tehtävästä tiedosto `model.js`, joka sisältää sovelluksen *mallin* muodostinfunktion. Varmista ennen palauttamista, että tehtäväpohjan sisältämät malliin liittyvät testit menevät läpi ilman virheilmoituksia.
 
-Edellisten puhelinmuistio-tehtävävien tapaan pohjakoodi sisältää puhelinmuistion  käyttöliittymän merkkauksen (vrt. [Tehtävä 1.1](../../osa1/tehtava11)). Pohjassa on mukana myös [Tehtävän 2.1](../tehtava21) `app.js` sekä `view.js`, joka sisältää *näkymän*  muodostinfunktion rungon.
+Edellisten puhelinmuistio-tehtävävien tapaan pohjakoodi sisältää puhelinmuistion  käyttöliittymän merkkauksen (vrt. [Tehtävä 1.1](../../osa1/tehtava11)). Pohjassa on mukana myös `app.js` sekä `view.js`, jotka sisältää ao. funktioiden rungot.
 
 #### Vihjeitä ja lisätietoja
 
-Tämän tehtävn voi ratkaista siten, että kopioi ensin edellisen tehtävän ratkaisusta  *mallin* ja *näkymän* muodostimet sekä alustusfunktion. *Näkymä* on valmis sellaisenaa, mutta *malli* ja *alustaja* edellyttävät pieniä muutoksia. 
+Tämän tehtävän voi ratkaista siten, että kopioi ensin edellisen tehtävän ratkaisusta  *mallin* ja *näkymän* muodostimet sekä alustusfunktion. *Näkymä* on valmis sellaisenaa, mutta *malli* ja *alustaja* edellyttävät pieniä muutoksia. 
 
 
 Oheismateriaalin [kohdassa 9.3]({{site.baseurl}}/weso/#9.3-Esimerkki:-Spoilaaja) on esimerkki, jossa mallille asetetaan datan muutoksista ilmoittava tarkkailija (esimerkissä: `listener`).
