@@ -27,11 +27,11 @@ Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
 Tehtäväpohjassa ei ole mukana testikoodia. Varmista kuitenkin, että sovellus toimii sitä ajamalla, kun ratkaisussa on mukana edellisen tehtävän yhteydessä laaditut ja testatut *mallin* ja *näkymän* muodostimet.
 
-Edellisten puhelinmuistio-tehtävävien tapaan pohjakoodi sisältää puhelinmuistion  käyttöliittymän merkkauksen (vrt. [Tehtävä 1.1](../../osa1/tehtava11)). Pohjassa on mukana myös [edellisen tehtävän](../tehtava21) `app.js` sekä tiedosto `puhelinmuistio.js`, joka sisältää *mallin* ja *näkymän* muodostinfunktioiden rungot.
+Edellisten puhelinmuistio-tehtävävien tapaan pohjakoodi sisältää puhelinmuistion  käyttöliittymän merkkauksen (vrt. [Tehtävä 1.1](../../osa1/tehtava11)). Pohjassa on mukana myös `app.js`, jossa on sovelluksen alustamisen suorittavan funktion runko, sekä tiedosto `puhelinmuistio.js`, joka sisältää *mallin* ja *näkymän* muodostinfunktioiden rungot.
 
 #### Vihjeitä ja lisätietoja
 
-Tämän tehtävän voi ratkaista siten, että a) kopio suoraan edellisen tehtävän ratkaisusta *mallin* ja *näkymän* muodostimet, ja b) muokkaa pohjakoodin `init`-funktiota hyödyntäen koodia, joka löytyy edelisen tehtävän ratkaisun *konttollerin* muodostimesta.
+Tämän tehtävän voi ratkaista siten, että a) kopioi suoraan edellisen tehtävän ratkaisusta *mallin* ja *näkymän* muodostimet, ja b) kopioi edellisen tehtävän pohjasta `init`-funktion ja muokkaa sitä hyödyntäen koodia, joka löytyy edelisen tehtävän ratkaisun *kontrollerin* muodostimesta.
 
 
 Oheismateriaalin [kohdassa 9.1]({{site.baseurl}}/weso/#9.1-Esimerkki:-Muistuttaja) esitellään MVC-mallin mukainen Muistuttaja-esimerkki, joka sisältää eksplisiittisen kontrollerin. [Kohdassa 9.2]({{site.baseurl}}/weso//#9.2-Kontrollerin-rooli-selainohjelmistoissa) esitetään, miten ratkaisu voidaan toteuttaan ilman *kontrollerin* muodostinta.
