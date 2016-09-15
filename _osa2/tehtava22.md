@@ -29,7 +29,7 @@ Edellisten puhelinmuistio-tehtävävien tapaan pohjakoodi sisältää puhelinmui
 
 #### Vihjeitä ja lisätietoja
 
-Tämän tehtävn voi ratkaista siten, että a) kopio suoraan edellisen tehtävän ratkaisusta *mallin* ja *näkymän* muodostimet, ja b) muokkaa pohjakoodin `init`-funktiota hyödyntäen koodia, joka löytyy edelisen tehtävän ratkaisun *konttollerin* muodostimesta.
+Tämän tehtävän voi ratkaista siten, että a) kopio suoraan edellisen tehtävän ratkaisusta *mallin* ja *näkymän* muodostimet, ja b) muokkaa pohjakoodin `init`-funktiota hyödyntäen koodia, joka löytyy edelisen tehtävän ratkaisun *konttollerin* muodostimesta.
 
 
 Oheismateriaalin [kohdassa 9.1]({{site.baseurl}}/weso/#9.1-Esimerkki:-Muistuttaja) esitellään MVC-mallin mukainen Muistuttaja-esimerkki, joka sisältää eksplisiittisen kontrollerin. [Kohdassa 9.2]({{site.baseurl}}/weso//#9.2-Kontrollerin-rooli-selainohjelmistoissa) esitetään, miten ratkaisu voidaan toteuttaan ilman *kontrollerin* muodostinta.
