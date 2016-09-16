@@ -10,7 +10,11 @@ permalink: /lukemistoja/index.html
 
 #### Käsikirjoja ja tutoriaaleja
 
-[Mozilla Developer Network (MDN)](https://developer.mozilla.org/fi/)   
+[Mozilla Developer Network (MDN)](https://developer.mozilla.org/fi/)
+
+* [JavaScript](https://developer.mozilla.org/fi/docs/Web/JavaScript)
+* [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+ 
 [W3Schools](http://www.w3schools.com)   
 
 #### Aihepiirin verkkokirjoja
@@ -27,3 +31,8 @@ permalink: /lukemistoja/index.html
 [ECMAScript Language Specification](https://tc39.github.io/ecma262/)  
 
 
+#### Kurssiin liittyviä JavaScript-kirjastoja
+
+[Jasmine](http://jasmine.github.io)  
+[Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)  
+[jQuery](https://jquery.com)  
