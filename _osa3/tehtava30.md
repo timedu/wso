@@ -95,8 +95,42 @@ Koodipohjassa on seuraava merkkaus:
 {% endhighlight %}
 
 
-Tehtäväpohjassa on kolme testijoukkoa. `SpecMuistioModel.js` testaa *mallia*, `SpecMuistioView.js` *näkymää* ja `SpecMuistio.js` koko sovellusta käyttöliittymän kautta.
+Tehtäväpohjassa on kolme testijoukkoa. `SpecMuistioModel.js` testaa *mallia*, `SpecMuistioView.js` *näkymää* ja `SpecMuistio.js` koko sovellusta käyttöliittymän kautta:
 
-Tämän tehtävän ratkaisua **ei palauteta**, mutta se lienee luonteva lähtökohta tämän osan (3) muille tehtäville.
+
+    Puhelinmuistio - Model:
+        lisää numeron henkilölle
+        ei lisää samaa numeroa kahteen kertaan
+        lisää henkilölle useita numeroita
+        ei lisää henkilön numeroa toiselle henkilölle
+        lisää numeroita monelle henkilölle
+        ei poista numeroa, jos poiston hakuehto (nimi) ei toteudu
+        ei poista numeroa, jos poiston hakuehto (numero) ei toteudu
+        poistaa numeron toteutuvilla hakuehdoilla
+        poistaa viimeisenkin numeron muistiosta
+        palauttaa luettelon, jonka kautta ei voi lisätä numeroa muistioon
+
+    Puhelinmuistio - View:
+        ei kaadu, jos paikkaa hahmonnettavalle käyttöliittymälle ei ole asetettu
+        ei kaadu, jos paikkaa hahmonnettavalle käyttöliittymälle ei löydy
+        rakentaa käyttöliittymään h2-otsikon, joka sisältää henkilön nimen
+        rakentaa käyttöliittymään henkilön puhelinnumerot sisältävän ul-listan
+        ei rakenna käyttöliittymään li-elementtejä, jos henkilöllä ei ole puhelinnumeroita
+        rakentaa käyttöliittymään puhelinnumeroille "X"-otsikoidut poisto-napit (button)
+        asettaa poisto-napeille click-tapahtuman käsittelijän
+        ei kaadu, vaikka poisto-funktiota ei ole määritelty
+        ei kaadu, vaikka poisto-funktio ei ole oikeaa tyyppiä (function)
+
+    Toiminta käyttöliittymän kautta:
+        esittää lisäyksen jälkeen henkilön nimen ja numeron sivulla
+        ei esitä henkilölle samoja numeroita
+        esittää lisäysten jälkeen henkilöllä useita eri numeroita
+        ei esitä henkilölle toiselle henkilölle lisättyä numeroa
+        esitää useille henkilöille lisättyjä numeroita
+        ei esitä henkilöltä poistettuja numeroita
+        esittää henkilölle lisätyn numeron, vaikka se on poistettu toiselta henkilöltä
+
+
+Tämän tehtävän ratkaisua **ei palauteta**, mutta se lienee luonteva lähtökohta Osan 3 muille tehtäville.
 
 
