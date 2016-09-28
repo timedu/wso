@@ -9,7 +9,7 @@ Toteuta [Tehtävän 3.0](../tehtava30) kuvaama sovellus kuitenkin niin, että *k
 
 Ratkaisussa *kontrolleri* ei käytä (suoraan) [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) -olion eikä [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)-tyyppisten olioiden ominaisuuksia (metodeja/attribuutteja). Niiden sijaan sovelletaan *jQuery*-funktiota (`$`), jonka palauttaman olion metodit [click](http://api.jquery.com/click/), [val](http://api.jquery.com/val/) ja [data](http://api.jquery.com/data/) saattavat olla tässä hyödyllisiä. 
 
-Palauta tehtävästä `initController`-funktion sisältämä tiedosto `controller.js`.
+**Palauta** tehtävästä `initController`-funktion sisältämä tiedosto `controller.js`. Varmista ennen palautusta, että tehtäväpohjassa olevat testit onnistuvat.
 
 ### Lisätietoja
 

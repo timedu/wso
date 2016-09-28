@@ -25,6 +25,6 @@ joista esim.
 saattaa antaa tukea iteraatioiden toteutukseen.
 
 
-Palauta tehtävästä `View`- ja `initView`[^1] -funktiot sisältämä tiedosto `view.js`.
+**Palauta tehtävästä** `View`- ja `initView`[^1] -funktiot sisältämä tiedosto `view.js`. Varmista ennen palautusta, että tehtäväpohjassa olevat testit onnistuvat.
 
 [^1]: `initView` on pohjassa valmiina.
