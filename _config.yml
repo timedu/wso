@@ -30,6 +30,9 @@ collections:
   osa2:
     output: true
     permalink: /:collection/:path/
+  osa3:
+    output: true
+    permalink: /:collection/:path/
 
 #
 # default setting (commented)

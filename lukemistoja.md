@@ -36,3 +36,5 @@ permalink: /lukemistoja/index.html
 [Jasmine](http://jasmine.github.io)  
 [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)  
 [jQuery](https://jquery.com)  
+[Mustache](https://github.com/janl/mustache.js)  
+

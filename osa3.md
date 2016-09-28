@@ -14,3 +14,10 @@ title: 3. Kirjastoista - jQuery, Mustache
 
 #### Tehtävät
 
+MVC-puhelinmuistio
+
+3.1 Sovelluksen alustus jQueryllä  
+3.2 Näkymä jQueryllä  
+3.3 Näkymä Mustachella  
+3.4 Malli jQueryllä (data palvelimella)  
+
