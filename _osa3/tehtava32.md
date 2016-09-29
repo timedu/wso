@@ -1,6 +1,7 @@
 ---
 layout: sivu
 title: Tehtävä 3.2
+exercise_upload_id: 286902
 ---
 
 ## Puhelinmuistio 

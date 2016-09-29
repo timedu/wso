@@ -1,6 +1,7 @@
 ---
 layout: sivu
 title: Tehtävä 3.4
+exercise_upload_id: 286904
 ---
 
 ## Puhelinmuistio 
