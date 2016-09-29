@@ -2,6 +2,7 @@
 layout: sivu
 title: Tehtävä 3.1
 exercise_upload_id: 286281
+exercise_template_name: W3E01.PuhelinmuistioI
 ---
 
 ## Puhelinmuistio 
@@ -14,7 +15,7 @@ Ratkaisussa *kontrolleri* ei käytä (suoraan) [document](https://developer.mozi
 
 #### Lisätietoja
 
-Sovelluspohjan merkkauksessa (`index.htm`) on määritelty *jQuery*-kirjaston käyttöönotto:
+Sovelluspohjan merkkauksessa (`index.html`) on määritelty *jQuery*-kirjaston käyttöönotto:
 
 {% highlight html %}
 

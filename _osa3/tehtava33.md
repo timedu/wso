@@ -2,6 +2,7 @@
 layout: sivu
 title: Tehtävä 3.3
 exercise_upload_id: 286903
+exercise_template_name: W3E03.PuhelinmuistioK
 ---
 
 ## Puhelinmuistio 

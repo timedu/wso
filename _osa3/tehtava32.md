@@ -2,6 +2,7 @@
 layout: sivu
 title: Tehtävä 3.2
 exercise_upload_id: 286902
+exercise_template_name: W3E02.PuhelinmuistioJ
 ---
 
 ## Puhelinmuistio 
