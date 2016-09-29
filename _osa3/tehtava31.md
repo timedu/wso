@@ -11,7 +11,7 @@ Ratkaisussa *kontrolleri* ei käytä (suoraan) [document](https://developer.mozi
 
 **Palauta** tehtävästä `initController`-funktion sisältämä tiedosto `controller.js`. Varmista ennen palautusta, että tehtäväpohjassa olevat testit onnistuvat.
 
-### Lisätietoja
+#### Lisätietoja
 
 Sovelluspohjan merkkauksessa (`index.htm`) on määritelty *jQuery*-kirjaston käyttöönotto:
 
@@ -62,5 +62,6 @@ $(function () {
 
 `$`-funktiolle parametrina annettu funktio suoritetaan dokumentin latauduttua selaimen ikkunaan (vrt. `window.onload`).
 
+Oheismateriaalin [kohdassa 10.1]({{site.baseurl}}/weso/#10.1-jQuery) käsitellään  *jQuery*-kirjastoa, josta löytyy [kattava dokumentaatio](http://api.jquery.com/) kirjaston kotisivustolla.
 
 
