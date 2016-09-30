@@ -11,11 +11,13 @@ Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus. Ratkaisussa `mu
 
 ![Puhelinmuistio-olio](../img/muistio_olio_21.png "Puhelinmuistio-olio")
 
-*Malliin* (`Model`) tallennetaan puhelinmuistion data. *Näkymä* (`View`) rakentaa käyttöliittymän mallin datalle. *Kontrolleri* (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`init`) jälkeen muistio toimii seuraavan kaavion mukaan: 
+*Malliin* (`Model`) tallennetaan puhelinmuistion data. *Näkymä* (`View`) rakentaa käyttöliittymän mallin datalle. *Kontrolleri* (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`init`) jälkeen muistio toimii seuraavan kaavion mukaan[^1]: 
+
+[^1]: Pohjakoodissa on kommenttimerkkien sisällä `View`-funktion edellä esitetty ko. funktiolla luotavien olioiden luokkaesityksessä myös metodi `poistaNumero(event)`. Tämän voi jättää huomioimatta. Näkymälle välitettävä viite numeron poistavaan funktioon talletetaan olion attribuuttiin `functionPoista`. Luokkaesityksessä on myös ehdotus funktiosta `esitäNumero(nimi, numero)`. Funktiota ei välttämättä tarvita (esim. testit eivät tutki funktion olemassaoloa). `Controller`-olion luokkaesityksessä on metodi `etsiNumerot()`. Sen tulisi olla `haeNumerot()`.
 
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_21.png "Puhelinmuistio-oliokaavio")
 
-*Kontrollerin* metodit (`etsiNumerot`, `lisaaNumero`, `poistaNumero`) on kytketty html-dokumentissa olevien panonappien click-tapahtumien käsittelijöiksi. Ne kutsuvat *mallin* vastaavia metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentista  (`inputNimi`, `inputNumero`) tai tapahtumaobjektista (`e`). *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) html-dokumentissa. 
+*Kontrollerin* metodit (`etsiNumerot`, `lisaaNumero`, `poistaNumero`) on kytketty html-dokumentissa olevien painonappien click-tapahtumien käsittelijöiksi. Ne kutsuvat *mallin* vastaavia metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentista  (`inputNimi`, `inputNumero`) tai tapahtumaobjektista (`e`). *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) html-dokumentissa. 
 
 Seuraavassa MVC-olioden rakenne on esitetty UML-luokkina:
 
@@ -80,4 +82,10 @@ Tehtävän ratkaisu on periatteeltaan samankaltainen kuin oheismateriaalin [kohd
 ![Muistutus-olio](../img/muistutus_olio_21.png "Muistutus-olio")
 
 Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmän. Kukin muodostinfunktio on paketoitu omaan olioonsa (`view`, `domain`, `controller`) ja muodostimille on annettu niiden tehtävää kuvaavat nimet. Tämä ratkaisu on luonteva erityisesti silloin, kun sovelluksessa on useita *malleja*, *näkymiä* ja/tai *kontrollereita*. Esimerkissä *näkymän* käsittelemä html-dokumentin kohta välitetään *näkymälle* muodostimen parametrina. Tämän tehtävän ratkaisussa on tätä tarkoitusta varten omat näkymän metodinsa.
+
+#### Päivityksiä
+
+160930: lisätty olioiden luokka -esitysten "painovirheitä" koskeva alaviite 
+
+
 
