@@ -11,17 +11,29 @@ Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus. Ratkaisussa `mu
 
 ![Puhelinmuistio-olio](../img/muistio_olio_21.png "Puhelinmuistio-olio")
 
-*Malliin* (`Model`) tallennetaan puhelinmuistion data. *Näkymä* (`View`) rakentaa käyttöliittymän mallin datalle. *Kontrolleri* (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`init`) jälkeen muistio toimii seuraavan kaavion mukaan[^1]: 
+*Malliin* (`Model`) tallennetaan puhelinmuistion data. *Näkymä* (`View`) rakentaa käyttöliittymän mallin datalle. *Kontrolleri* (`Controller`) vastaanottaa käyttöliitymästä mallin dataan liittyviä pyyntöjä. Sovelluksen alustuksen (`init`) jälkeen muistio toimii seuraavan kaavion mukaan: 
 
+<!--
 [^1]: Pohjakoodissa on kommenttimerkkien sisällä `View`-funktion edellä esitetty ko. funktiolla luotavien olioiden luokkaesityksessä myös metodi `poistaNumero(event)`. Tämän voi jättää huomioimatta. Näkymälle välitettävä viite numeron poistavaan funktioon talletetaan olion attribuuttiin `functionPoista`. Luokkaesityksessä on myös ehdotus funktiosta `esitäNumero(nimi, numero)`. Funktiota ei välttämättä tarvita (esim. testit eivät tutki funktion olemassaoloa). `Controller`-olion luokkaesityksessä on metodi `etsiNumerot()`. Sen tulisi olla `haeNumerot()`.
+-->
 
+![Puhelinmuistio-oliokaavio](https://www.lucidchart.com/publicSegments/view/c98a82cf-a76f-422d-a450-9a066ac7c278/image.png  "Puhelinmuistio-oliokaavio") 
+
+<!--
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_21.png "Puhelinmuistio-oliokaavio")
+-->
 
-*Kontrollerin* metodit (`etsiNumerot`, `lisaaNumero`, `poistaNumero`) on kytketty html-dokumentissa olevien painonappien click-tapahtumien käsittelijöiksi. Ne kutsuvat *mallin* vastaavia metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentista  (`inputNimi`, `inputNumero`) tai tapahtumaobjektista (`e`). *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) html-dokumentissa. 
+*Kontrollerin* metodit (`haeNumerot`, `lisaaNumero`, `poistaNumero`) on kytketty html-dokumentissa olevien painonappien click-tapahtumien käsittelijöiksi. Ne kutsuvat *mallin* vastaavia metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentista  (`inputNimi`, `inputNumero`) tai tapahtumaobjektista (`e`). *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) html-dokumentissa. 
 
 Seuraavassa MVC-olioden rakenne on esitetty UML-luokkina:
 
+![Puhelinmuistio-luokat](https://www.lucidchart.com/publicSegments/view/adacaed3-2055-47f7-8f7b-a924c5bf69c6/image.png "Puhelinmuistio-luokat")
+
+<!--
 ![Puhelinmuistio-luokat](../img/muistio_luokat_21.png "Puhelinmuistio-luokat")
+-->
+
+<sup>**Huom.** Tehtävän pohjakoodin kommenttien luokkaesitys saattaa poiketa edellä esitetystä. Ratkaisussa on kuitenkin tarkoitus noudattaa näiltä osin tätä tehtäväkuvausta.</sup>
 
 Sovelluksen alustamisen suorittava funktio `muistio.init` löytyy tehtävän pohjakoodista tiedostosta `app.js`:
 
@@ -85,7 +97,14 @@ Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmä
 
 #### Päivityksiä
 
-160930: lisätty olioiden luokka -esitysten "painovirheitä" koskeva alaviite 
+161001:
 
+* korjaus: oliokaaviossa kontrolleriin tehtävä metodikutsu `etsiNumerot` vaihdettu kutsuksi `haeNumerot`; muutos huomioitu myös kaavioon viittaavassa tekstissä 
+* korjaus: edellistä vastaava muutos tehty myös olioiden luokka-esitykseen, josta on samalla poistettu `View`-luokassa ollut `esitaNumero` -metodi (esim. testit eivät edellyttä ratkaisun jäsentämistä tällä tavalla)
+* lisätty huomautus, joka koskee tehtäväkuvauksen ja tehtäväpohjassa olevien kommenttien epäyhtenäisyyttä
+* poistettu "painovirheitä" koskeva alaviite
 
+160930: 
+
+* lisätty olioiden luokka -esitysten "painovirheitä" koskeva alaviite 
 
