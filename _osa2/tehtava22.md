@@ -15,11 +15,14 @@ Laadi puhelinmuistiosta MVC-sunnittelumallia mukaileva toteutus, jossa ei ole ek
 
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_22.png "Puhelinmuistio-oliokaavio")
 
-*Html-dokumentissa* olevien panonappien click-tapahtumien käsittelijät kutsuvat *mallin* metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentin tekstikentistä  tai tapahtumaobjektista. *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) *html-dokumentissa*. 
+*Html-dokumentissa* olevien painonappien click-tapahtumien käsittelijät kutsuvat *mallin* metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`) parametreilla, jotka on poimittu dokumentin tekstikentistä  tai tapahtumaobjektista. *Malli* suorittaa metodikutsujen edellyttämät datan päivitysoperaatiot ja pyytää *näkymää* muodostamaan (`paivita`) tilannetta vastaavan käyttöliittymän. *Näkymä* rakentaa käyttöliittymän määrättyyn paikkaan (`spanNimi`, `ulNumerot`) *html-dokumentissa*. 
 
 Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
 ![Puhelinmuistio-luokat](../img/muistio_luokat_22.png "Puhelinmuistio-luokat")
+
+<sup>**Huom.** Tehtävän pohjakoodin kommenttien luokkaesitys saattaa poiketa edellä esitetystä. Ratkaisussa on kuitenkin tarkoitus noudattaa näiltä osin tätä tehtäväkuvausta. `View`-luokassa esitettyä `esitaNumero`-metodia ei välttämättä tarvita.</sup>
+
 
 *Mallin* ja *näkymän* muodostimet ovat täysin samoja kuin [Tehtävän 2.1](../tehtava21) ratkaisussa. *Kontrollerin* roolin toteuttaa käyttöliittymän painonappien tapahtumakäsittelijäfunktiot, jotka asetetaan sovelluksen alustuksen yhteydessä (`muistio.init`).
 
@@ -35,4 +38,13 @@ Tämän tehtävän voi ratkaista siten, että a) kopioi suoraan edellisen tehtä
 
 
 Oheismateriaalin [kohdassa 9.1]({{site.baseurl}}/weso/#9.1-Esimerkki:-Muistuttaja) esitellään MVC-mallin mukainen Muistuttaja-esimerkki, joka sisältää eksplisiittisen kontrollerin. [Kohdassa 9.2]({{site.baseurl}}/weso//#9.2-Kontrollerin-rooli-selainohjelmistoissa) esitetään, miten ratkaisu voidaan toteuttaan ilman *kontrollerin* muodostinta.
+
+#### Päivityksiä
+
+161001
+
+* lisätty huomautus, joka koskee tehtäväkuvauksen ja tehtäväpohjassa olevien kommenttien epäyhtenäisyyttä sekä luokkaesityksessä esitettyä `esitaNumero` -metodia
+
+
+
 

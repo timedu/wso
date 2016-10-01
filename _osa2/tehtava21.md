@@ -35,6 +35,83 @@ Seuraavassa MVC-olioden rakenne on esitetty UML-luokkina:
 
 <sup>**Huom.** Tehtävän pohjakoodin kommenttien luokkaesitys saattaa poiketa edellä esitetystä. Ratkaisussa on kuitenkin tarkoitus noudattaa näiltä osin tätä tehtäväkuvausta.</sup>
 
+Seuraavassa on edellistä luokkaesitystä vastaavat tehtävässä laadittavien muodostinfunktioiden rungot;
+
+{% highlight javascript %}
+
+muistio.Model = function (view) {
+
+    var henkilot = {};
+
+    this.annaNumerot = function (nimi) {
+
+    };
+    this.lisaaNumero = function (nimi, numero) {
+
+    };
+    this.poistaNumero = function (nimi, numero) {
+
+    };
+};
+
+{% endhighlight %}
+
+
+
+{% highlight javascript %}
+
+muistio.View = function () {
+
+    var spanNimi = null;
+    var ulNumerot = null;
+    var functionPoistaNumero = null;
+
+    this.asetaSpanNimi = function(elementti) {
+
+    };
+    this.asetaUlNumerot = function(elementti) {
+
+    };
+    this.asetaPoistonKasittelija = function (f) {
+
+    };
+    this.paivita = function (nimi, numerot) {
+
+    };
+};
+
+{% endhighlight %}
+
+
+
+{% highlight javascript %}
+
+muistio.Controller = function (model) {
+
+    var inputNimi;
+    var inputNumero;
+
+    this.asetaNimiInput = function (elementti) {
+
+    };
+    this.asetaNumeroInput = function (elementti) {
+
+    };
+    this.haeNumerot = function () {
+
+    };
+    this.lisaaNumero = function () {
+
+    };
+    this.poistaNumero = function (e) {
+
+    };
+};
+
+{% endhighlight %}
+
+
+
 Sovelluksen alustamisen suorittava funktio `muistio.init` löytyy tehtävän pohjakoodista tiedostosta `app.js`:
 
 {% highlight javascript %}
@@ -102,7 +179,8 @@ Esimerkissä on tähän tehtävään verrattuna yksi rakenteellinen taso enemmä
 * korjaus: oliokaaviossa kontrolleriin tehtävä metodikutsu `etsiNumerot` vaihdettu kutsuksi `haeNumerot`; muutos huomioitu myös kaavioon viittaavassa tekstissä 
 * korjaus: edellistä vastaava muutos tehty myös olioiden luokka-esitykseen, josta on samalla poistettu `View`-luokassa ollut `esitaNumero` -metodi (esim. testit eivät edellyttä ratkaisun jäsentämistä tällä tavalla)
 * lisätty huomautus, joka koskee tehtäväkuvauksen ja tehtäväpohjassa olevien kommenttien epäyhtenäisyyttä
-* poistettu "painovirheitä" koskeva alaviite
+* poistettu "painovirheitä" koskeva alaviite (ks. muutokset *160930*)
+* kuvaukseen lisätty laadittavien muodostinfunktioiden rungot
 
 160930: 
 
