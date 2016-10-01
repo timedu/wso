@@ -18,11 +18,13 @@ Sovellukseen liittyy kolme JavaScript -tiedostoa. *Alustuksen* toteuttava koodi 
 
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_23.png "Puhelinmuistio-oliokaavio")
 
-*Html-dokumentissa* olevien panonappien click-tapahtumien käsittelijät kutsuvat *mallin* metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`), ja myös *näkymän* `paivita`-metodia silloin, kun käyttöliittymä pyytää tietyn henkilön puhelinnumeroita. Jos kysymyksessä on *mallin* dataa päivittävä pyyntö, *malli* ilmoittaa datan päivittymisestä kutsumalla sille asetettua `tarkkailija`-funktiota. Tarkkailija määritellään niin, että se kutsuu *näkymän* `paivita`-metodia. 
+*Html-dokumentissa* olevien panonappien click-tapahtumien käsittelijät kutsuvat *mallin* metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`), ja myös *näkymän* `paivita`-metodia silloin, kun käyttöliittymä pyytää tietyn henkilön puhelinnumeroita. Jos kysymyksessä on *mallin* dataa päivittävä pyyntö, *malli* ilmoittaa datan päivittymisestä kutsumalla sille asetettua `tarkkailija`-funktiota. Tarkkailija määritellään niin, että se kutsuu *näkymän* `paivita`-metodia. Mallin `annaNumerot` -metodissa ei kutsuta tarkkailijaa (`annaNumerot` palauttaa pyydetyn henkilön numerotaulukon). 
 
 Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
 ![Puhelinmuistio-luokat](../img/muistio_luokat_23.png "Puhelinmuistio-luokat")
+
+<sup>Luokkaesityksessä olevia metodeja `suoritaTarkkailija` ja `esitaNumero` ei välttämättä tarvita. `Model`-luokan `tarkkailija`-ominaisuuden alkuarvona voisi olla `function(){}` (tyhjä funktio) `null`-arvon sijaan, jolloin asettamattoman tarkkailijan kutsu ei aiheuta virhettä.</sup>
 
 *Näkymän* muodostin on täysin sama kuin tehtävin [2.1](../tehtava21) ja [2.2](../tehtava22) ratkaisussa. *Malliin* ei talleteta edellisten tehtävien tapaan viitettä *näkymään*. Sen sijaan sovelluksen alustaja (`muistio.init`) asettaa *mallille* `tarkkailija`-funktion `asetaTarkkailija`-metodilla.
 
@@ -36,4 +38,12 @@ Tämän tehtävän voi ratkaista siten, että kopioi ensin edellisen tehtävän 
 
 
 Oheismateriaalin [kohdassa 9.3]({{site.baseurl}}/weso/#9.3-Esimerkki:-Spoilaaja) on esimerkki, jossa mallille asetetaan datan muutoksista ilmoittava tarkkailija (esimerkissä: `listener`).
+
+#### Päivityksiä
+
+161001
+
+* lisätty luokkaesityksen täsmennyksiä
+
+
 
