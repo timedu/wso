@@ -21,7 +21,7 @@ Sovellukseen liittyy kaksi JavaScript -tiedostoa. *Alustuksen* toteuttava koodi 
 
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_24.png "Puhelinmuistio-oliokaavio")
 
-*Html-dokumentissa* olevien panonappien click-tapahtumien käsittelijät kutsuvat *mallin* (`annaNumerot`, `lisaaNumero`, `poistaNumero`) ja *näkymän*  (`paivita`) metodeja. 
+*Html-dokumentissa* olevien painonappien click-tapahtumien käsittelijät kutsuvat *mallin* (`annaNumerot`, `lisaaNumero`, `poistaNumero`) ja *näkymän*  (`paivita`) metodeja. 
 
 *Näkymän* muodostin pysyy tässä edelleen samana (vrt. tehtävät [2.1](../tehtava21),  [2.2](../tehtava22) ja [2.3](../tehtava23)). *Malli* pelkistyy seuraavanlaiseksi:
 

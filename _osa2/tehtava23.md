@@ -18,7 +18,11 @@ Sovellukseen liittyy kolme JavaScript -tiedostoa. *Alustuksen* toteuttava koodi 
 
 ![Puhelinmuistio-oliokaavio](../img/olio_kaavio_23.png "Puhelinmuistio-oliokaavio")
 
-*Html-dokumentissa* olevien panonappien click-tapahtumien käsittelijät kutsuvat *mallin* metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`), ja myös *näkymän* `paivita`-metodia silloin, kun käyttöliittymä pyytää tietyn henkilön puhelinnumeroita. Jos kysymyksessä on *mallin* dataa päivittävä pyyntö, *malli* ilmoittaa datan päivittymisestä kutsumalla sille asetettua `tarkkailija`-funktiota. Tarkkailija määritellään niin, että se kutsuu *näkymän* `paivita`-metodia. Mallin `annaNumerot` -metodissa ei kutsuta tarkkailijaa (`annaNumerot` palauttaa pyydetyn henkilön numerotaulukon). 
+*Html-dokumentissa* olevien painonappien click-tapahtumien käsittelijät kutsuvat *mallin* metodeja (`annaNumerot`, `lisaaNumero`, `poistaNumero`), ja myös *näkymän* `paivita`-metodia silloin, kun käyttöliittymä pyytää tietyn henkilön puhelinnumeroita. Jos kysymyksessä on *mallin* dataa päivittävä pyyntö, *malli* ilmoittaa datan päivittymisestä kutsumalla sille asetettua `tarkkailija`-funktiota. Tarkkailijaa ei kuitenkaan kutsuta, jos päivityspyynnön (esim. `lisaaNumero`) seurauksena data ei muutu (esim. yritettäessä lisätä henkilölle jo muistiossa olevaa numeroa).
+
+Tarkkailija määritellään niin, että se kutsuu *näkymän* `paivita`-metodia. 
+
+*Mallin* `annaNumerot` -metodi ei kutsu tarkkailijaa vaan `annaNumerot` palauttaa pyydetyn henkilön numerotaulukon. *Mallin* metodien suoritus ei saa aiheutaa virhetilannetta, vaikka mallille ei ole asetettu tarkkailijaa.  
 
 Seuraavassa *mallin* ja *näkymän* rakenteet on esitetty UML-luokkina:
 
@@ -40,6 +44,10 @@ Tämän tehtävän voi ratkaista siten, että kopioi ensin edellisen tehtävän 
 Oheismateriaalin [kohdassa 9.3]({{site.baseurl}}/weso/#9.3-Esimerkki:-Spoilaaja) on esimerkki, jossa mallille asetetaan datan muutoksista ilmoittava tarkkailija (esimerkissä: `listener`).
 
 #### Päivityksiä
+
+161002
+
+* lisätty tarkkailijan toimintaan liittyviä täsmennyksiä
 
 161001
 
