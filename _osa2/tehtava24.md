@@ -27,7 +27,7 @@ Sovellukseen liittyy kaksi JavaScript -tiedostoa. *Alustuksen* toteuttava koodi 
 
 ![Puhelinmuistio-luokat](../img/muistio_luokat_24.png "Puhelinmuistio-luokat")
 
-Sovelluksen alustuksen suorittavan `init`-funktion rakentaa seuraavaan tyyliin:
+Sovelluksen alustuksen suorittavan `init`-funktion voi rakentaa seuraavaan tyyliin:
 
 {% highlight javascript %}
 
