@@ -33,8 +33,20 @@ permalink: /lukemistoja/index.html
 
 #### Kurssiin liittyviä JavaScript-kirjastoja
 
+[Angular](https://angularjs.org)
+
+* [API Reference](https://docs.angularjs.org/api)
+* [Developer Guide](https://docs.angularjs.org/guide)
+
+[Angular Validation: Match](https://github.com/TheSharpieOne/angular-validation-match)   
 [Jasmine](http://jasmine.github.io)  
 [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)  
 [jQuery](https://jquery.com)  
+[Moment](http://momentjs.com)  
 [Mustache](https://github.com/janl/mustache.js)  
+
+#### Muita viitteitä
+
+[Rubular - a Ruby regular expression editor](http://rubular.com/)   
+
 
