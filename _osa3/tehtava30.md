@@ -8,7 +8,7 @@ exercise_template_name: W3E00.PuhelinmuistioH1
 
 Tämän osan tehtävien lähtökohtana on [Tehtävän 2.4](../../osa2/tehtava24) ratkaisuksi laadittu puhelinmuistio. Sovelluksen osia kuitenkin toteutetaan perus-JavaScriptin sijaan tukeutumalla *jQuery*- ja *Mustache*-kirjastoihin. [Tehtävässä 3.1](../tehtava31) kontrollerin toteutuksessa sovelletaan *jQueryä*. [Tehtävän 3.2](../tehtava32) näkymä rakennetaan *jQueryllä*. [Tehtävässä 3.3](../tehtava33) käytetään *Mustachea* näkymän toteutuksessa. [Tehtävän 3.4](../tehtava34) käyttämä data talletetaan palvelimelle. Mallin palvelimelle tekemät pyynnöt rakennetaan *jQueryllä*.
 
-Sovellus rakentuu [Tehtävään 2.4](../../osa2/tehtava24) verrattuna jonkin verran eri tavalla. Halutessasi voit muodostaa ensin tässä kuvatun perus-JavaScript -perustaisen ratkaisun jäsentäen Tehtävän 2.4 tuotoksesi hivenen toisella tavalla. Projektipohjan testeineen voi ladata tältä sivulta.
+Sovellus rakentuu [Tehtävään 2.4](../../osa2/tehtava24) verrattuna jonkin verran eri tavalla. Halutessasi voit muodostaa **ensin** tässä kuvatun **perus-JavaScript -perustaisen ratkaisun** jäsentäen Tehtävän 2.4 tuotoksesi hivenen toisella tavalla. Projektipohjan testeineen voi ladata tältä sivulta.
 
 `muistio`-olioon on paketoituna *mallin* ja *näkymän*  muodostinfunktiot sekä funktiot *näkymän* ja *kontrollerin* alustamiseksi:
 
@@ -95,7 +95,7 @@ Koodipohjassa on seuraava merkkaus:
 {% endhighlight %}
 
 
-Tehtäväpohjassa on kolme testijoukkoa. `SpecMuistioModel.js` testaa *mallia*, `SpecMuistioView.js` *näkymää* ja `SpecMuistio.js` koko sovellusta käyttöliittymän kautta:
+Tehtäväpohjassa on kolme testijoukkoa. `SpecMuistioModel.js` testaa *mallia*, `SpecMuistioView.js`[^2] *näkymää* ja `SpecMuistio.js` koko sovellusta käyttöliittymän kautta:
 
 
     Puhelinmuistio - Model:
@@ -130,7 +130,17 @@ Tehtäväpohjassa on kolme testijoukkoa. `SpecMuistioModel.js` testaa *mallia*, 
         ei esitä henkilöltä poistettuja numeroita
         esittää henkilölle lisätyn numeron, vaikka se on poistettu toiselta henkilöltä
 
+[^2]: Osuvampi otsikko näkymän (View) "*ei kaadu, jos ...*" -testeille voisi olla "*ei kaadu, vaikka ...*". Näkymä voi kaatua myös aivan muusta syystä.
 
 Tämän tehtävän ratkaisua **ei palauteta**, mutta se lienee luonteva lähtökohta Osan 3 muille tehtäville.
+
+#### Päivityksiä
+
+161006
+
+* lisätty testeihin liittyviä täsmennyksiä
+
+#### Alaviitteet
+
 
 
