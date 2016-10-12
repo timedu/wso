@@ -31,5 +31,8 @@ Palauta tehtävästä tiedostot `template.html` ja `directive.js`, joiden rungot
 Tehtävä on poimittu lähes sellaisenaan [kurssimateriaalista]({{site.baseurl}}/weso/),
 [Tehtävä 30]({{site.baseurl}}/weso/#vk-4-t30), jonka edellä materiaalissa käsitellään tehtävän ratkaisua tukevia asioita.
 
+Erilaisten syötteiden tarkistuksia on usein luonteva tehdä ns. säännöllisillä lausekkeilla (regular expressions). Tähän liittyvä käyttökelpoinen työkalu löytyy osoitteesta <http://rubular.com/>.
+
+
 #### Alaviitteet
 
