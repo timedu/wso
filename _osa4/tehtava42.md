@@ -7,14 +7,15 @@ exercise_template_name: W4E02.Elokuvat
 
 ## Elokuvat
 
-~~~
-// sivu työn alla
-~~~
-
-
-> Muokkaa tehtäväpohjassa olevaa dokumenttia siten, että se listaa 
+> Laadi tehtäväpohjaan template siten, että se listaa 
 ( [ng-repeat](https://docs.angularjs.org/api/ng/directive/ngRepeat) ) 
-`index.html` -näkymässä `MovieController` -kontrollerissa määritellyn taulukon `movies` elokuvat siten, että lista vastaa pohjassa olevaa vakiomerkkausta.
+osana dokumentia  `MovieController` -kontrollerissa[^2] määritellyn taulukon[^3]  elokuvat siten, että lista vastaa pohjassa olevaa  vakiomerkkausta[^1].
+
+[^1]: Merkkaus on poiskommentoituna tiedostossa `index.html`.
+
+[^2]: `MovieController` löytyy tiedostosta `js\controller.js`.
+
+[^3]: `$scope.movies`
 
 > Elokuvan otsikko sisältää sen nimen ja julkaisuvuoden. Elokuvan nimen tulee olla linkki sen sivulle 
 [IMDb](http://www.imdb.com/):ssä 
@@ -27,7 +28,7 @@ niin, että näyttelijän nimi on ensin ja sen jälkeen suluissa näyttelijän r
 ( [orderBy](https://docs.angularjs.org/api/ng/filter/orderBy) ), 
 niin että uusin elokuva on listan kärjessä. 
 
-Palauta tehtävästä tiedosto `index.html`. Varmista, että tehtäväpohjassa olevat testit menevät läpi ennen palautusta.
+Palauta tehtävästä tiedosto `template.html`, jonka runko löytyy `todo`-hakemistosta. Varmista, että tehtäväpohjassa olevat testit menevät läpi ennen palautusta.
 
 
 #### Lisätietoja
@@ -36,5 +37,4 @@ Tämä on tehtävä on lähes sama kuin [kurssimateriaalin]({{site.baseurl}}/wes
 [Tehtävä 28]({{site.baseurl}}/weso/#vk-4-t28), jonka edellä materiaalissa käsitellään tehtävän ratkaisua tukevia asioita.
 
 
-
-
+#### Alaviitteet
