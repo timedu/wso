@@ -12,7 +12,7 @@ title: 3. Kirjastoista - jQuery, Mustache
 > Selainohjelmistojen rakennetta suunniteltaessa yksi huolenaihe on sivun näkymien järkevä hallinta.  Näkymätemplatet ovat HTML-koodipätkiä, jotka sisältävät halutun HTML-rakenteen sekä paikat datalle. Eräs projekti näkymätemplatejen generointiin on [Mustache.js](https://github.com/janl/mustache.js).
 
 
-Edelliset lainaukset on poimittu [oheislukemiston]({{site.baseurl}}/weso/) luvusta 
+Edelliset lainaukset on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luvusta 
 [10. Valmiit JavaScript-kirjastot]({{site.baseurl}}/weso/#10-Valmiit-JavaScript-kirjastot), joka esittelee lyhyesti *jQuery*- ja *Mustache*-kirjastoja. 
 
 #### Tehtävät
