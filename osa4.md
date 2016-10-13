@@ -29,6 +29,23 @@ Kaikki tämän osan tehtävät on poimittu kurssilukemistosta:
 [Tehtävä 4.6 Pikakirjoitus](tehtava46)   
 [Tehtävä 4.7 Muistilista](tehtava47)  
 
-Viimeinen tehtävistä (4.7) on muita jonkin verran laajempi. 
+Viimeinen tehtävistä ([4.7](tehtava47)) on muita jonkin verran laajempi muistuttaen ominaisuuksiltaan kurssin edellisten osien tehtävissä eri periaattein toteutettua Puhelinmuistio-sovellusta. Muut tehtävät keskittyvät *AngulaJS*-sovelluskehyksen yksittäisten ominaisuuksien esittelyyn.
+
+[Tehtävässä 4.1](tehtava41) voidaan todeta, miten *AngularJS* hoitaa datan siirtymisen *näkymästä* *malliin* ja päinvastoin ilman JavaScript-koodin kirjoittamista. Tehtävässä tosin laaditaan myös yksinkertainen *kontrolleri*, joka suorittaa *mallin* datan asettamisen alkuarvoonsa.
+
+[Tehtävä 4.2](tehtava42) esittelee *AngularJS* -näkymien muodostamisessa käytettävää template -kieltä, joka syntaksiltaan muistuttaan *Mustachea*. Angularia käytettäessä templatet laaditaan osaksi merkkausta siten, että merkkaukseen sisällytetään Angularin ymmärtämiä ns. direktiivejä, jotka voivat esiintyä lähdekoodissa html -elementtien attribuutteina tai omina elementteinään.
+
+[Tehtävässä 4.3](tehtava43) tulee esiin, miten *mallin* datajoukkoa voidaan suodattaa *näkymässä* ilman JavaScript-koodaamista. [Tehtävässä 4.4](tehtava44) kelpoistetaan käyttäjän lomakkeelle syöttämät tiedot. Perusmuodossaan tämäkin voidaan toteuttaa ilman JavaScriptia. Tehtävässä hyödynnetään kelpoistuksessa myös erästä Angularin laajennusta sekä laaditaan oma kelpoistusta tukeva direktiivi. Viimeksi mainittu edellyttää JavaScript -koodia, mutta se on pohjassa jo melkein valmiina.
+
+
+
+
+
+
+
+
+
+
+
 
 
