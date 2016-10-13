@@ -134,7 +134,13 @@ Tehtäväpohjassa on kolme testijoukkoa. `SpecMuistioModel.js` testaa *mallia*, 
 
 Tämän tehtävän ratkaisua **ei palauteta**, mutta se lienee luonteva lähtökohta Osan 3 muille tehtäville.
 
+Halutessaan voi myös ladata tämän tehtävän erään [esimerkkiratkaisun]({{site.baseurl}}/koodi_pohjat/W3E00.PuhelinmuistioH1.E.zip).
+
 #### Päivityksiä
+
+161013
+
+* lisätty viite esimerkkiratkaisuun
 
 161006
 
