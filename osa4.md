@@ -15,11 +15,9 @@ Edellisessä lauseessa ei ole kirjoitusvirhettä, Angularia ei voi rajata pelkä
 > Mikä Angularissa on hienoa, on se, että se tekee luonteeltaan staattisesta HTML:stä dynaamista, jolloin malli on sekä helppo esittää näkymässä, että helppo muokata näkymän kautta. Yksinkertaisia sovelluksia voidaan saada aikaan kirjoittamatta riviäkään JavaScriptiä. 
 
 Edellä oleva lainaus on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luvun 12
-([Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS)) alusta.
+([Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS)) alusta. Myös kaikki tämän osan tehtävät perustuvat kurssilukemistoon.
 
 ### Tehtävät
-
-Kaikki tämän osan tehtävät on poimittu kurssilukemistosta:
 
 [Tehtävä 4.1 James Bond](tehtava41)   
 [Tehtävä 4.2 Elokuvat](tehtava42)   
@@ -37,15 +35,5 @@ Viimeinen tehtävistä ([4.7](tehtava47)) on muita jonkin verran laajempi muistu
 
 [Tehtävässä 4.3](tehtava43) tulee esiin, miten *mallin* datajoukkoa voidaan suodattaa *näkymässä* ilman JavaScript-koodaamista. [Tehtävässä 4.4](tehtava44) kelpoistetaan käyttäjän lomakkeelle syöttämät tiedot. Perusmuodossaan tämäkin voidaan toteuttaa ilman JavaScriptia. Tehtävässä hyödynnetään kelpoistuksessa myös erästä Angularin laajennusta sekä laaditaan oma kelpoistusta tukeva direktiivi. Viimeksi mainittu edellyttää JavaScript -koodia, mutta se on pohjassa jo melkein valmiina.
 
-
-
-
-
-
-
-
-
-
-
-
-
+[Tehtävän 4.5](tehtava45) painopiste on kontrollerissa, johon laaditaan joukko näkymästä kutsuttavia metodeja. Myös [Tehtävän 4.6](tehtava46) keskittyy kontrolleriin, johon rakennetaan mallin datan muutoksia seuraavia tarkkailijoita. Tehtävässä tulee esiin myös, miten kontrolleri voi toimintansa tueksi ottaa käyttöön erillisiä palveluja.
+ 
