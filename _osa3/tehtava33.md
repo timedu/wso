@@ -19,6 +19,9 @@ Kutsuttaessa *näkymän* `hahmonna`-metodia, *Mustache* muodostaa *templaten* pe
 
 **Palauta** tehtävästä tiedosto `view.js`, joka sisältää `View`- ja `initView`[^1] -funktiot sekä `template`-merkkijonon. Varmista ennen palautusta, että tehtäväpohjassa olevat testit onnistuvat.
 
+[^1]: `initView` on pohjassa valmiina.
+
+
 ### Lisätietoja
 
 *Mustache* otetaan sovelluksessa käyttöön *jQueryn* tavoin (`index.html`):
@@ -40,13 +43,62 @@ Kutsuttaessa *näkymän* `hahmonna`-metodia, *Mustache* muodostaa *templaten* pe
   ...      
 
 </body>
+
 {% endhighlight %}
 
-Oheismateriaalin [kohdassa 10.2]({{site.baseurl}}/weso/#10.2-N%C3%A4kym%C3%A4templatet-ja-Mustache.js) käsitellään  *Mustache*-kirjastoa, josta löytyy tarkempi kuvaus pakettiin liittyvässä [README](https://github.com/janl/mustache.js/blob/master/README.md)-tiedostossa.
+Kurssilukemiston [kohdassa 10.2][kohta-10.2] käsitellään  *Mustache* -kirjastoa, josta löytyy tarkempi kuvaus pakettiin liittyvässä [README][mustache] -tiedostossa.
+
+[kohta-10.2]: {{site.baseurl}}/weso/#10.2-N%C3%A4kym%C3%A4templatet-ja-Mustache.js
+[mustache]: https://github.com/janl/mustache.js/blob/master/README.md
+
+#### Esimerkki
+
+Templatet ovat html-muotoisia merkkijonoja, johon on merkitty paikat datalle. Kurssilukemiston esimerkeissä template-merkkijonot on laadittu `script` -elementin sisällöksi. Tässä tehtävässä template laaditaan merkkijono-tyyppisen muuttujan `muistio.template` arvoksi. 
+
+Templaten hahmonnus ("rendedointi") tarkoittaa sitä, että templateen merkityt datan paikat korvataan todellisella datalla. Tulokseksi saadaan html-merkkausta.
+
+{% highlight javascript %}
+
+var template = '...';
+var data = '...';
+
+var renderedTemplate = Mustache.render(template, data);
+
+{% endhighlight %}
+
+Seuraavassa on yksinkertainen template ja sen hahmonnus:
+
+{% highlight javascript %}
+{% raw %}
+
+var template = "<h2>{{otsikko}}</h2><p>{{kappale}}</p>";
+
+var renderedTemplate = Mustache.render(template, {
+  otsikko: "Tervehdys",
+  teksti: "Hello, World!"
+});
+
+// muuttujan renderedTemplate sisältönä on nyt
+// <h2>Tervehdys</h2><p>Hello, World!</p>
+
+{% endraw %}
+{% endhighlight %}
+
+Hahmonnettu template voidaan asettaa elementin sisällöksi *jQuery* -objektin `html` -metodilla, esim.
+
+{% highlight javascript %}
+
+  $('#paikka').html(renderedTemplate);
+
+{% endhighlight %}
+ 
+
+#### Päivityksiä
+
+161014
+
+* Lisätietoja -kohtaan lisätty yksikertainen template -esimerkki
 
 
-
-
-[^1]: `initView` on pohjassa valmiina.
-
+#### Alaviitteet
 
