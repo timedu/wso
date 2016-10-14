@@ -21,7 +21,9 @@ exercise_template_name: W4E04.SyotteenValidointi
 
 [^1]: Tähän käytetään Angulariin toteutettua [direktiiviä](https://github.com/TheSharpieOne/angular-validation-match#usage), joka on otettu osaksi sovellusta (JavaScript -tiedosto on projektin hakemistosta `js/libs`). 
 
-[^2]: Henkilötunnuksen muodon määrittely löytyy [Wikipediasta](https://fi.wikipedia.org/wiki/Henkil%C3%B6tunnus#Tunnuksen_muoto). Tässä tehtävässä voi rajoittua 1900 -luvulla syntyneiden henkilöiden rekisteröintiin. Asia hoitunee joudevasti oman direktiivin määrittelyllä, johon liittyviä ohjeita löytyy *AngularJS:n* [kehittäjän oppaasta](https://docs.angularjs.org/guide/forms) (ks. sivulla kohta "Custom validation"). Tosin direktiivi ja siihen liittyvä apufunktio on pohjassa jo suurelta osin valmiina (`todo/directive.js`).
+[^2]: Henkilötunnuksen muodon määrittely löytyy [Wikipediasta](https://fi.wikipedia.org/wiki/Henkil%C3%B6tunnus#Tunnuksen_muoto). Tässä tehtävässä voi rajoittua 1900 -luvulla syntyneiden henkilöiden rekisteröintiin. Asia hoitunee joudevasti oman direktiivin määrittelyllä, mihin liittyviä ohjeita löytyy *AngularJS:n* kehittäjän oppaasta kohdasta [Custom validation][custom-validation]. Kohdassa voi silmällä vaikka esimerkkiä, jossa määritellään merkkauksessa viitattava `integer` -direktiivi. Tosin tässä tarvittava direktiivi ja siihen liittyvä apufunktio on pohjassa jo lähes valmiina (`todo/directive.js`).
+
+[custom-validation]: https://docs.angularjs.org/guide/forms#custom-validation
 
 Palauta tehtävästä tiedostot `template.html` ja `directive.js`, joiden rungot löytyvät `todo`-hakemistosta. Varmista, että tehtäväpohjassa olevat testit menevät läpi ennen palautusta.
 
