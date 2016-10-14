@@ -22,7 +22,7 @@ Edellä oleva lainaus on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luv
 [Tehtävä 4.1 James Bond](tehtava41)   
 [Tehtävä 4.2 Elokuvat](tehtava42)   
 [Tehtävä 4.3 Elokuvien haku](tehtava43)   
-[Tehtävä 4.4 Lomakkeen kelpoistaminen](tehtava44)   
+[Tehtävä 4.4 Rekisteröityminen](tehtava44)   
 [Tehtävä 4.5 Laskin](tehtava45)   
 [Tehtävä 4.6 Pikakirjoitus](tehtava46)   
 [Tehtävä 4.7 Muistilista](tehtava47)  
