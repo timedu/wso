@@ -28,9 +28,9 @@ Tässä malli informoi pyynnön valmistumisesta sille asetetun *kuuntelijan* avu
  
 Mallin alustaja `initModel` asettaa mallille kuhunkin tapahtumaan (`anna`, `lisaa`, `poista`) liittyvän kuuntelijan kutsumalla mallin `asetaKuuntelija`-metodia. (vrt.  [addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)). 
 
-Tehtäväpohja on NetBeansin *php*-tyypin projekti, jossa palvelinpään osuuden toteutus löytyy tiedostosta `php/muistio.php`.  Skripti tallettaa muistio-datan istuntoon. Muistion koko sisällön voi tulostaa pyynnöllä `./php/muistio.php?dump` ja datan voi poistaa pyynnöllä `./php/muistio.php?reset`. Em. pyynnöt toteuttavat linkit löytyvät pohjassa olevasta tiedostosta `utils.html`.
+Tehtäväpohja on NetBeansin *php*-tyypin projekti[^1], jossa palvelinpään osuuden toteutus löytyy tiedostosta `php/muistio.php`.  Skripti tallettaa muistio-datan istuntoon. Muistion koko sisällön voi tulostaa pyynnöllä `./php/muistio.php?dump` ja datan voi poistaa pyynnöllä `./php/muistio.php?reset`. Em. pyynnöt toteuttavat linkit löytyvät pohjassa olevasta tiedostosta `utils.html`.
 
-
+[^1]: Sovelluksen ajo edellyttää sitä, että *PHP* on asennettu käytettävään laitteeseen. Oletuksena tässä on, että käytetään web-palvelimena *PHP* -tulkkia ("PHP Built-in Web Server"). 
 
 
 
