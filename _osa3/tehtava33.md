@@ -71,7 +71,7 @@ Seuraavassa on yksinkertainen template ja sen hahmonnus:
 {% highlight javascript %}
 {% raw %}
 
-var template = "<h2>{{otsikko}}</h2><p>{{kappale}}</p>";
+var template = "<h2>{{otsikko}}</h2><p>{{teksti}}</p>";
 
 var renderedTemplate = Mustache.render(template, {
   otsikko: "Tervehdys",
@@ -91,11 +91,36 @@ Hahmonnettu template voidaan asettaa elementin sisällöksi *jQuery* -objektin `
   $('#paikka').html(renderedTemplate);
 
 {% endhighlight %}
+
+Mustache -template voi sisältää myös silmukoita:
  
+{% highlight javascript %}
+{% raw %}
+
+    var template = "\
+        <h2>{{otsikko}}</h2>   \n\
+        {{#tekstit}}           \n\
+            <p>{{.}}</p>       \n\
+        {{/tekstit}}";
+
+    var renderedTemplate = Mustache.render(template, {
+        otsikko: "Tervehdys",
+        tekstit: ["Hello, World!", "Tere, Maailm!"]
+    });
+
+    // muuttujan renderedTemplate sisältönä on nyt:
+    //    
+    //  <h2>Tervehdys</h2>
+    //  <p>Hello, World!</p>
+    //  <p>Tere, Maailm!</p>
+
+{% endraw %}
+{% endhighlight %}
+  
 
 #### Päivityksiä
 
-161014
+161014, 161015
 
 * Lisätietoja -kohtaan lisätty yksikertainen template -esimerkki
 
