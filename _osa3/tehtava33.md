@@ -55,7 +55,7 @@ Kurssilukemiston [kohdassa 10.2][kohta-10.2] käsitellään  *Mustache* -kirjast
 
 Templatet ovat html-muotoisia merkkijonoja, johon on merkitty paikat datalle. Kurssilukemiston esimerkeissä template-merkkijonot on laadittu `script` -elementin sisällöksi. Tässä tehtävässä template laaditaan merkkijono-tyyppisen muuttujan `muistio.template` arvoksi. 
 
-Templaten hahmonnus ("rendedointi") tarkoittaa sitä, että templateen merkityt datan paikat korvataan todellisella datalla. Tulokseksi saadaan html-merkkausta.
+Templaten hahmonnus ("renderointi") tarkoittaa sitä, että templateen merkityt datan paikat korvataan todellisella datalla. Tulokseksi saadaan html-merkkausta.
 
 {% highlight javascript %}
 
