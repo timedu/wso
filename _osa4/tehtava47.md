@@ -20,8 +20,10 @@ exercise_template_name: W4E07.Muistilista
 * Käyttäjä voi merkata kaikki tehtävät tehdyksi klikkaamalla "Merkkaa kaikki tehdyiksi" -painiketta.
 * Käyttäjä voi poistaa tehtävän listasta painamalla oikeasta laidasta "Poista"-painiketta.
 * Käyttäjä voi poistaa kaikki tehtävät klikkaamalla "Poista kaikki"-painiketta. Varmista painikkeen klikkaamisen jälkeen, että käyttäjä haluaa varmasti poistaa kaikki tehtävät (vihje: [confirm][confirm]).
-* Tehtävään liittyy prioriteetti. Jokaiselle tehtävälle lisätään sen lisäämisen yhteydessä prioriteetti 1. Mitä pienempi prioriteetti on, sitä tärkeämpi tehtävä on. Käyttäjä voi muokata tehtävän prioriteettia vaihtamalla sen vieressä olevan tekstikentän arvoa. Järjestä tehtävät prioriteetin mukaan niin, että tärkeimmät tehtävät ovat listan yläpäässä (vihje: liitä prioriteetin sisältävään tekstikenttään [ng-blur][ng-blur] -kuuntelija ja järjestä tehtävien taulukko prioriteetin mukaan, kun kenttä menettää fokuksen käyttämällä [sort][sort] -funktiota).
+* Tehtävään liittyy prioriteetti. Jokaiselle tehtävälle lisätään sen lisäämisen yhteydessä prioriteetti 1. Mitä pienempi prioriteetti on, sitä tärkeämpi tehtävä on. Käyttäjä voi muokata tehtävän prioriteettia vaihtamalla sen vieressä olevan tekstikentän arvoa. Järjestä tehtävät prioriteetin mukaan niin, että tärkeimmät tehtävät ovat listan yläpäässä (vihje: liitä prioriteetin sisältävään tekstikenttään [ng-blur][ng-blur] -kuuntelija ja järjestä tehtävien taulukko prioriteetin mukaan, kun kenttä menettää fokuksen käyttämällä [sort][sort] -funktiota)[^2].
 * Käyttäjä voi nähdä muistilistan alalaidasta, kuinka monta tehtävää hän on tehnyt ja kuinka monta on vielä tekemättä. Käytä selkeää suomen kieltä, jolloin `1 tehtävä tehty` on oikein ja `1 tehtävää tehty` on väärin (vihje: [ng-pluralize][ng-pluralize]). Voit toteuttaa toiminnon käyttämällä [$watch][watch] -funktiota niin, että seuraat tehtävät sisältävää taulukkoa ja päivittää esimerkiksi muuttujien `todosDone` ja `todosRemaining` arvot aina, kun taulukossa tapahtuu muutoksia. Muista lisätä `$watch` -funktiokutsun viimeiseksi parametriksi `true`, niin Angular tarkastaa onko taulukossa tapahtunut muutoksia sen sisällön, eikä pelkän viitteen perusteella.
+
+[^2]: `ng-blur`-direktiiviä ei välttämättä tarvita: asian voi toteuttaa sitomalla prioriteetti-kentän malliin (`ng-model`) ja niin, että lajittelun hoitaa `ng-repeat`-direktiivissä oleva `orderBy`; tähän liittyvä testi kuitenkin odottaa `ng-blur` -pohjaista ratkaisua, mutta testin epäonnistumisen voi jättää huomiotta, jos halutun ominaisuuden voi todeta sovellusta ajamalla
 
 [ng-class]: https://docs.angularjs.org/api/ng/directive/ngClass
 [confirm]: https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm
@@ -40,6 +42,14 @@ Tehtävä on poimittu lähes sellaisenaan [kurssimateriaalista][weso],
 [weso]: {{site.baseurl}}/weso/
 [tehtäva-33]: {{site.baseurl}}/weso/#vk-4-t33
 [luku-12]: {{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS
+
+
+#### Päivityksiä
+
+161020
+
+* lisätty prioriteetin muutokseen liittyvä alaviite
+
 
 #### Alaviitteet
 

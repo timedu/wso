@@ -42,7 +42,8 @@ Tämä on kopio [alkuperäisestä materiaalista](http://web-selainohjelmointi.gi
 [Angular](https://angularjs.org)
 
 * [API Reference](https://docs.angularjs.org/api)
-* [Developer Guide](https://docs.angularjs.org/guide)
+* [Developer Guide](https://docs.angularjs.org/guide)  
+* [Angular's jqLite](https://docs.angularjs.org/api/ng/function/angular.element#angular-s-jqlite)
 
 [Angular Validation: Match](https://github.com/TheSharpieOne/angular-validation-match)   
 [Jasmine](http://jasmine.github.io)  

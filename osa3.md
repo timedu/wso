@@ -19,4 +19,4 @@ Edelliset lainaukset on poimittu [kurssilukemiston]({{site.baseurl}}/weso/) luvu
 
 Tämä osa sisältää neljä tehtävää, joiden yhteydessä muokataan edellisten tehtävien ratkaisujen myötä syntynyttä puhelinmuistio-sovellusta siten, että sovelluksessa tukeudutaan *jQuery*- ja *Mustache*-kirjastoihin.
 
-[Tehtävässä 3.1](tehtava31)  *jQueryn* avulla paikannetaan dokumentista elelemttejä ja asetetaan elementeille tapatumakäsittelijöitä. [Tehtävässä 3.2](tehtava32) muokataan *jQueryllä* DOM-puuta. [Tehtävässä 3.3](tehtava33) rakennetaan näkymä käyttäen *Mustachea*. [Tehtävässä 3.4](tehtava34) välitetään *jQueryn* keinoin palvelimelle palvelupyyntöjä.
+[Tehtävässä 3.1](tehtava31)  *jQueryn* avulla paikannetaan dokumentista elementtejä ja asetetaan elementeille tapatumakäsittelijöitä. [Tehtävässä 3.2](tehtava32) muokataan *jQueryllä* DOM-puuta. [Tehtävässä 3.3](tehtava33) rakennetaan näkymä käyttäen *Mustachea*. [Tehtävässä 3.4](tehtava34) välitetään *jQueryn* keinoin palvelimelle palvelupyyntöjä.
