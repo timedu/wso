@@ -9,7 +9,9 @@ exercise_template_name: W4E01.JamesBond
 
 > Muokkaa tehtäväpohjassa olevaa dokumenttia siten, että näkymän otsikon sisältö määräytyy "etunimi" ja "sukunimi" tekstikenttien perusteella. Jos siis "etunimi"-kentän arvo on "Kalle" ja "sukunimi"-kentän arvo on "Ilves", on otsikon sisältö "My names is Ilves, Kalle Ilves". Otsikon alkuarvon tulee olla "My name is Bond, James Bond".
 
-Palauta tehtävästä tiedostot `template.html` ja `controller.js`. Varmista, että tehtäväpohjassa olevat testit menevät läpi ennen palautusta.
+Palauta tehtävästä tiedostot `template.html` ja `controller.js`. Varmista, että tehtäväpohjassa olevat testit[^2] menevät läpi ennen palautusta.
+
+[^2]: Huom. Älä poista templatessa olevia `id`-attribuutteja - testit käyttävät näitä elementtien paikannuksessa.
 
 ### Lisätietoja
 
@@ -57,6 +59,13 @@ Tiedosto `index.html` on pohjassa valmiina. Merkkauksessa on viite
 {% endhighlight %}
 
 Merkkauksessa olevassa *template* otetaan tässä käyttöön AngularJS:n `ng-include` -direktiivillä. Viitatun tiedoston sisältö tulee `div` -elementin sisällöksi. *Kontrolleri* on rakennettu pohjassa hieman eri tavalla kuin mitä on esitetty kurssimateriaalin ao. luvun alkupuolella, mutta sen toiminnassa ei ole rakenteellisesta eroavaisuudesta huolimatta eroa. 
+
+
+#### Päivityksiä
+
+161020
+
+* lisätty testeihin liittyvä alaviite
 
 
 #### Alaviitteet
