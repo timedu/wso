@@ -13,7 +13,7 @@ exercise_template_name: W4E06.Pikakirjoitus
 
 [^1]: `todo/controller.js`
 [^2]: teksti löytyy tiedoston `index.html` asettamasta globaalista muuttujasta `TEXT`
-[^3]: tiedoston `index.html` asettaa globaalin muuttujan `TIME` arvoon `15`
+[^3]: tiedosto `index.html` asettaa globaalin muuttujan `TIME` arvoon `15`
 [^4]: ilmoitus tulee  laskurin arvon viereen, esim. `Aikaa jäljellä: 0 => Onnistuit kirjoittamaan 99 merkkiä.` (pelin päättyessä ilmoitus voidaan konkatenoida laskurin arvon perään)
 
 [watch]: https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$watch
