@@ -67,7 +67,7 @@ Tämän tehtävän pohjakoodissa vastaava tiedosto on seuraavanlainen:
 {% endraw %}
 {% endhighlight %}
 
-Painikkeille ei ole `ng-click`-direktiiviä eikä sisältöa. Näiden sijaan painikkeilla on tässä tehtävässä määriteltävä `wso-btn`-direktiivi. Poisto-painikkeella on myös attribuutit `data-nimi` ja `data-numero`, joiden arvona on numeron poistossa tarvittavat tiedot. Direktiivi laaditaan pohjassa olevaan runkoon, `directive.js`:
+Painikkeilla ei ole `ng-click`-direktiiviä eikä sisältöä. Näiden sijaan painikkeilla on tässä tehtävässä määriteltävä `wso-btn`-direktiivi. Poisto-painikkeella on myös attribuutit `data-nimi` ja `data-numero`, joiden arvona on numeron poistossa tarvittavat tiedot. Direktiivi laaditaan pohjassa olevaan runkoon, `directive.js`:
 
 {% highlight javascript %}
 
@@ -125,10 +125,11 @@ Pääsivun viittaamista tiedostoista `template.html` on pohjassa valmiina. Tiedo
 
 AngularJS -direktiivejä käsitellään lyhyesti kurssilukemiston [kohdassa 12.6][weso-12.6]. Laajempi esitys asiasta löytyy AngularJS:n [kehittäjän oppaasta][guide].
 
-
 [weso-12.6]: {{site.baseurl}}/weso/#12.6-Direktiivit
 [guide]: https://docs.angularjs.org/guide/directive
 
+*AngularJS*:n elementti-objektit muistuttavat hieman *jQuery*-objekteja, mutta esim. läheskään kaikki *jQuery*:n metodit eivät ole käytettävissä, ks. [angular.element][angular.element]. 
 
+[angular.element]: https://docs.angularjs.org/api/ng/function/angular.element
 
 
