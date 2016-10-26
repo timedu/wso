@@ -1,14 +1,13 @@
 ---
 layout: sivu
 title: Tehtävä 5.4
-exercise_upload_id: 
-exercise_template_name: 
+exercise_upload_id: 291619
+exercise_template_name: W5E04.PuhRouting
 ---
 
 ## Puhelinmuistio: Routing 
 
 Kehitä puhelinmuistio-sovellusta edelleen siten, että se muodostuu käyttäjän näkökulmasta kolmesta erillisestä sivusta (Kuvat 1-3).
-
 
 ![ui-1](../img/w5e04-1.png "ui-1")
 
