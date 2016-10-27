@@ -14,7 +14,7 @@ Tehtävissä [5.1](../tehtava51) ja [5.2](../tehtava52) näkymän (`template.htm
 {% highlight html %}
 {% raw %}
 
-  <div ng-controller="PuhController">
+<div ng-controller="PuhController">
 
     <div id="lomake">
         ...
@@ -30,7 +30,8 @@ Tehtävissä [5.1](../tehtava51) ja [5.2](../tehtava52) näkymän (`template.htm
         </ul>                
     </div>
 
-  </div>
+</div>
+
 
 {% endraw %}
 {% endhighlight %}
@@ -116,7 +117,10 @@ Sovelluksen pohjassa olevan pääsivun `index.html` merkkaus on seuraava:
 
 {% endhighlight %}
 
-Pääsivun viittaamista tiedostoista `template.html` on pohjassa valmiina. Tiedoston `service.js` voi kopioida sellaisenaan edellisen tehtävän ratkaisusta. *Direktiivi* laaditaan tiedostoon `directive.js`. Kontrollerin `controller.js` lähtökohdaksi voi ottaa edellisen tehtävän ratkaisun, mutta se edellyttää pieniä muutoksia
+Pääsivun viittaamista tiedostoista `template.html` on pohjassa valmiina. Tiedoston `service.js` voi kopioida sellaisenaan edellisen tehtävän ratkaisusta. *Direktiivi* laaditaan tiedostoon `directive.js`. Kontrollerin `controller.js` lähtökohdaksi voi ottaa edellisen tehtävän ratkaisun, mutta se edellyttää pieniä muutoksia[^1].
+
+[^1]: Muutostarve kohdistuu `remove`-metodiin: tieto poistettavasta puhelinnumerosta (nimi, numero) ei tule tässä suoraan parametreina vaan parametrina välitetään klikattu button -elementti, josta attribuuteitteihin `data-nimi` ja `data-numero` on talletettu poistossa tarvittavat tiedot. 
+
 
 **Palauta** tehtävästä tiedostot `controller.js` ja `directive.js`. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
 
@@ -131,5 +135,7 @@ AngularJS -direktiivejä käsitellään lyhyesti kurssilukemiston [kohdassa 12.6
 *AngularJS*:n elementti-objektit muistuttavat hieman *jQuery*-objekteja, mutta esim. läheskään kaikki *jQuery*:n metodit eivät ole käytettävissä, ks. [angular.element][angular.element]. 
 
 [angular.element]: https://docs.angularjs.org/api/ng/function/angular.element
+
+#### Alaviitteet
 
 
