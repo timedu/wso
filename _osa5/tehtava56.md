@@ -15,7 +15,58 @@ exercise_template_name: W5E06.PuhFirebase
 
 [firebase]: https://firebase.google.com/
 
+### Käyttöliittymä
 
+![ui-1](../img/w5e06-1.png "ui-1")
+
+
+<small>Kuva 1. Hae numeroita -sivu (ei kirjauduttu).</small>
+
+*Nimi* -kenttään ei voi kirjoittaa, jos käyttäjä ei ole tunnistautunut. *uusi numero* -linkki ei ole näkyvissä.
+
+
+![ui-2](../img/w5e06-2.png "ui-2")
+
+<small>Kuva 2. Hae numeroita -sivu (kirjauduttu).</small>
+
+Käyttöliittymä muilta osin: vrt. [tehtävä 5.4](../tehtava54).
+
+
+### Tietokanta
+
+Tietokanna Firebase-konsolissa (esim.):
+
+~~~
+puhelinmuistio-5e3d9
+  |
+  +-bart
+  |   |
+  |   +-_111: "111"
+  |   |
+  |   +-_222: "222"
+  |   |     
+  |   +-_333: "333"  
+  |
+  +-ned
+      |
+      +-_444: "444" 
+      |
+      +-_555: "555"
+~~~
+
+Vastaava JavaScript-objekti sovelluksessa:
+
+{% highlight json %}
+
+{ "bart": {"_111": "111", "_222": "222", "_333": "333" },
+  "ned":  {"_444": "444", "_555": "555" } }
+
+{% endhighlight %}
+
+
+### Sovelluksen rakenne
+
+Pääsivun (`index.html`) `body`-elementin merkkaus:
 
 
 {% highlight html %}
