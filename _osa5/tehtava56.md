@@ -11,25 +11,28 @@ exercise_template_name: W5E06.PuhFirebase
 // sivu on työn alla
 ~~~
 
-[Firebase][firebase]-tietokantaa käyttävä versio [tehtävästä 5.4](../tehtava54) ...
+Laadi puhelinmuistiosovellus, joka on ulkoiselta käyttäytymiseltään pääosin [tehtävän 5.4](../tehtava54) ratkaisun kaltainen. Laadittava sovellus kuitenkin tukeutuu tietojen talletuksen osalta [Firebase-tietokantaan][firebase-db]. Sovelluksen käyttö myös edellyttää käyttäjältään tunnistautumista, mikä toteteutetaan [Firebasen autentikointipalvelulla][firebase-auth].
 
-[firebase]: https://firebase.google.com/
+[firebase-db]: https://firebase.google.com/docs/database/
+[firebase-auth]: https://firebase.google.com/docs/auth/
 
 ### Käyttöliittymä
 
-![ui-1](../img/w5e06-1.png "ui-1")
+Sovelluksen ulkoasu ja reititys on pääosin kuten [tehtävässä 5.4](../tehtava54). Tunnistautumisvaatimus kuitenkin tuo näihin pieniä muutoksia. 
 
+![ui-1](../img/w5e06-1.png "ui-1")
 
 <small>Kuva 1. Hae numeroita -sivu (ei kirjauduttu).</small>
 
-*Nimi* -kenttään ei voi kirjoittaa, jos käyttäjä ei ole tunnistautunut. *uusi numero* -linkki ei ole näkyvissä.
+Jos käyttäjä ei ole tunnistautunut, *Hae numeroita* -sivulla on *Login* -painike. Tällöin *Nimi* -kenttään ei voi kirjoittaa ja *uusi numero* -linkki ei ole näkyvissä (Kuva 1).
 
+Käyttäjä tunnistautuu klikkaamalla *Login* -painiketta. Jos tunnistautuminen onnistuu, näkymään ilmestyy *Login* -painikkeen tilalle *Logout* -painike, *Nimi* -kenttä aktivoituu ja *uusi numero* -linkki tulee näkyviin (Kuva 2).
 
 ![ui-2](../img/w5e06-2.png "ui-2")
 
 <small>Kuva 2. Hae numeroita -sivu (kirjauduttu).</small>
 
-Käyttöliittymä muilta osin: vrt. [tehtävä 5.4](../tehtava54).
+Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkeiden ja linkkien ohella myös suorilla osoitteilla (vrt. [Tehtävä 5.4](../tehtava54)). Jos kirjautumista ei ole tehty, on suoralla osoitteella pääsy ainoastaan sovelluksen juuriosoitteeseen (`/W5E06/#/` tai `/W5E06/`), joka tuo esiin *Hae numeroita* -näkymän. Yritys muuhun osoitteeseen (esim. `/W5E06/#/bart`, `/W5E06/#/bart/remove/111` tai `/W5E06/#/jotakin/muuta`) palauttaa käsittelyn juuriosoitteeseen.
 
 
 ### Tietokanta
