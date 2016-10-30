@@ -28,6 +28,8 @@ Jos käyttäjä ei ole tunnistautunut, *Hae numeroita* -sivulla on *Login* -pain
 
 Käyttäjä tunnistautuu klikkaamalla *Login* -painiketta. Jos tunnistautuminen onnistuu, näkymään ilmestyy *Login* -painikkeen tilalle *Logout* -painike, *Nimi* -kenttä aktivoituu ja *uusi numero* -linkki tulee näkyviin (Kuva 2).
 
+*Logout* -painikkeen klikkaus palauttaa näkymän Kuvassa 1 esitetyn kaltaiseksi.
+
 ![ui-2](../img/w5e06-2.png "ui-2")
 
 <small>Kuva 2. Hae numeroita -sivu (kirjauduttu).</small>
@@ -37,7 +39,36 @@ Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkei
 
 ### Tietokanta
 
-Tietokanna Firebase-konsolissa (esim.):
+
+[Firebase-tietokanta][firebase-db] on avain-arvo -tyyppinen, missä arvo voi muodostua  avain-arvo -pareista. Tietokantaan ei voi sellaisenaan tallettaa taulukko -tyyppistä tietoa eikä tietävästi ole [kovin suositeltavaa][array-practices] käyttää nollasta lähteviä juoksevia numeerisia avaimia.
+
+[array-practices]: https://firebase.googleblog.com/2014/04/best-practices-arrays-in-firebase.html
+
+Edellisissä puhelinmuistio-toteutuksissa tiedot on talletettu sovelluksessa seuraavanlaiseen rakenteeseen:
+
+{% highlight json %}
+
+{ "bart": ["111", "222", "333"],
+  "ned":  ["444", "555"] }
+
+{% endhighlight %}
+
+<small>Listaus 1. Tietojen rakenne edellisissä puhelinmuistio-toteutuksissa.</small>
+
+Tässä edellä esitetyt taulukot tulisi muuntaan toisenlaiseksi rakenteeksi, joka voisi olla esim. seuraava:
+
+{% highlight json %}
+
+{ "bart": {"_111": "111", "_222": "222", "_333": "333" },
+  "ned":  {"_444": "444", "_555": "555" } }
+
+{% endhighlight %}
+
+<small>Listaus 2. Taulukot muunnettu avain-arvo -rakenteeksi.</small>
+
+Tällaisessa tilanteessa avaimet ja arvot voisivat olla samoja, mutta esim. *Listauksen 2*  esittämää periaatetta noudattaen sovellusta kehitettäessä ilmenee, onko kulloinkin käsittelyssä arvo vai sen avain. 
+
+Firebase-konsolissa *Listauksen 2* data näkyy seuraavasti:
 
 ~~~
 puhelinmuistio-5e3d9
@@ -57,15 +88,7 @@ puhelinmuistio-5e3d9
       +-_555: "555"
 ~~~
 
-Vastaava JavaScript-objekti sovelluksessa:
-
-{% highlight json %}
-
-{ "bart": {"_111": "111", "_222": "222", "_333": "333" },
-  "ned":  {"_444": "444", "_555": "555" } }
-
-{% endhighlight %}
-
+<small>Kuva 3. Avain-arvo -rakenne Firebase -konsolissa.</small>
 
 ### Sovelluksen rakenne
 
