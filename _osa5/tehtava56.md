@@ -39,7 +39,6 @@ Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkei
 
 ### Tietokanta
 
-
 [Firebase-tietokanta][firebase-db] on avain-arvo -tyyppinen, missä arvo voi muodostua  avain-arvo -pareista. Tietokantaan ei voi sellaisenaan tallettaa taulukko -tyyppistä tietoa eikä tietävästi ole [kovin suositeltavaa][array-practices] käyttää nollasta lähteviä juoksevia numeerisia avaimia.
 
 [array-practices]: https://firebase.googleblog.com/2014/04/best-practices-arrays-in-firebase.html
@@ -89,6 +88,10 @@ puhelinmuistio-5e3d9
 ~~~
 
 <small>Kuva 3. Avain-arvo -rakenne Firebase -konsolissa.</small>
+
+### Autentikointi
+
+Firebase-projektin autentikonti-asetuksiin liittyvä sivu tulee esiin konsolin valikon *Authentication* -valinnalla. *SIGN-IN METHOD* -välilehdellä voi valita projektissa käytettävät tunnistusmenetelmät. Tässä käytetään *Email/Password* -tunnistusta.  Tunnistetiedot voi määritellä *USERS* -välilehdellä. *Email* -arvon ei tarvitse tässä olla oikea sähköpostiosoite.
 
 ### Sovelluksen rakenne
 
