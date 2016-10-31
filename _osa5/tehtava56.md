@@ -34,6 +34,8 @@ Käyttäjä tunnistautuu klikkaamalla *Login* -painiketta. Jos tunnistautuminen 
 
 <small>Kuva 2. Hae numeroita -sivu (kirjauduttu).</small>
 
+#### Reititys
+
 Kun käyttäjä on kirjautunut, sovelluksen näkymiin voidaan siirtyä painikkeiden ja linkkien ohella myös suorilla osoitteilla (vrt. [Tehtävä 5.4](../tehtava54)). Jos kirjautumista ei ole tehty, on suoralla osoitteella pääsy ainoastaan sovelluksen juuriosoitteeseen (`/W5E06/#/` tai `/W5E06/`), joka tuo esiin *Hae numeroita* -näkymän. Yritys muuhun osoitteeseen (esim. `/W5E06/#/bart`, `/W5E06/#/bart/remove/111` tai `/W5E06/#/jotakin/muuta`) palauttaa käsittelyn juuriosoitteeseen.
 
 
@@ -127,15 +129,16 @@ Pääsivun (`index.html`) `body`-elementin merkkaus:
 
 Kun tehtäväpohjan käynnistää, selaimen ikkunaan ilmestyy sivu, joka sisältää sovelluksen pääotsikon *Puhelinmuistio*. Selaimen konsolille tulee ilmoitus *Error: No Firebase App '[DEFAULT]' has been created - call Firebase App.initializeApp()*.
 
-#### *Vaihe I*
-
-Askelten 1-5 toteuttamisen jälkeen sovelluksen pitäisi toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
-
 #### 1. Sovelluksen kytkentä Firebase -projektiin.
 
 Kirjaa Firebase -projektisi tunnisteet ao. kohtaan tiedostossa `app.js`.
  
 Tämän jälkeen em. virheilmoitusta ei enää pitäsi tulla selaimen konsolille. Tosin konsolille ilmestynee teksti *User signed out.*, jonka tuottaa pohjassa valmiina oleva autentikaatioon liittyvä koodi.
+
+#### *Vaihe I*
+
+Askelten 2-5 toteuttamisen jälkeen sovelluksen pitäisi toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
+
 
 #### 2. Näkymien reititys
 
@@ -180,18 +183,51 @@ Sovelluksen pitäisi nyt toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaise
 
 #### 6. Tunnistautuminen
 
+Määrittele Firebase -projektiisi tunnistautumistiedot (ks. edellä [Autentikointi](#autentikointi)) ja kirjaa nämä tiedoston `app.js` määrittelemän vakion `FIREBASE_USER` arvoksi.
 
-ks. [Autentikointi](#autentikointi)
+Varmista, että näkymän `search.view.html` *Login*- ja *Logout* -painikkeille on asettettu tapahtumakäsittelijät siten, että sisään- ja uloskirjautumisen voi suorittaa näiden painikkeiden avulla.
 
-...
+Nyt klikattaessa *Login/Logout* painikkeita selaimen konsolille pitäisi ilmestyä teksti *User signed in* tai *User signed out*.
+
+
+*Lisätietoja*: Tehtäväpohjan tiedostossa `firebase.auth.service.js` on palvelu `Auth`, joka määrittelee tässä tarvittavat tunnistautumiseen liittyvät funktiot. Vakio `FIREBASE_USER` injektoidaan `Auth`-palveluun. Tiedostossa `app.js` tunnistautumisfunktioita on asetettu sovelluksen globaaliin näkyvyysalueeseen[^root-scope] (`$rootScope`). Samassa yhteydessä on määritelty tapahtumakäsittelijä, joka mm. tulostaa selaimen konsolille tekstin *User signed in* tai *User signed out* kirjautumisen tian vaihtuessa.
+
+[^root-scope]: Näkymä voi viitata globaalin näkyvyysalueen (`$rootScope`) tunnisteisiin samoin kuin sen kontrollerikohtaisen näkyvyysalueen (`$scope`) tunnisteisiin.
+
+#### 7. Tunnistautumisen huomiointi näkymässä
+
+Muokkaa näkymää `search.view.html` siten, että sen ulkoasu riippuu kirjautumisen tilasta edellä kohdassa [Käyttöliittymä](#kyttliittym) esitetyllä tavalla.
+
+*Vihjeitä*: Esim. direktiiveistä [ng-disabled][ng-disabled], [ng-hide][ng-hide] ja  [ng-show][ng-show] saattaa olla tässä hyötyä. Tehtäväpohjasta löytynee sovelluksen yleisen näkyvyysalueen (`$rootScope`) muuttuja, jota voidaan hyödyntää tämän ominaisuuden toteutuksessa.
+
+[ng-disabled]: https://docs.angularjs.org/api/ng/directive/ngDisabled
+[ng-hide]: https://docs.angularjs.org/api/ng/directive/ngHide
+[ng-show]: https://docs.angularjs.org/api/ng/directive/ngShow
+
+#### 8. Tunnistautumisen huomiointi reitityksessä
+
+Muokkaa reitityskonfiguraatiota `route.config.js` siten, että pääsy sovelluksen osoitteisiin riippuu kirjautumisen tilasta edellä kohdassa [Reititys](#reititys) kuvatulla tavalla.
+
+Pyrittäessä osoitteeseen, johon pääsy ei ole sallittu ilman kirjautumista, selaimen konsolille tulostuu teksti *AUTH_REQUIRED*, ja selaimeen ilmestyy *Hae numeroita* -näkymä.
+
+*Vihjeitä*: Asiaa käsitellään kurssilukemiston [kohdassa 17.5][kohta-17.5]. Tässä riittänee reitityskonfiguraatiotiedoston päivitys. Tarvitava apuneuvo löytynee tehtäväpohjassa olevasta `Auth`-palvelusta (`firebase.auth.service.js`). Tiedostossa `app.js` olevasta koodista selvinnee, miten tapahtuu *AUTH_REQUIRED* -tekstin tulostus ja  *Hae numeroita* -näkymän esiintuonti samassa tilanteessa.
+
+[kohta-17.5]: {{site.baseurl}}/weso/#17.5-Turvallisuus-ennen-kaikkea:-authentikaatio-Firebasen-avulla
+
+#### 9. Tietojen haku Firebase -tietokannasta
+
+#### 10. Firebase -tietokannan tietojen ylläpito
+
 
 #### *Vaihe III*
 
-
-#### 10. Palauta tehtävän ratkaisu
+ 
+#### 11. Palauta tehtävän ratkaisu
 
 **Palauta** tehtävän ratkaisusta tiedostot `route.config.js`, `firebase.db.service.js`, `search.controller.js` sekä `search.view.html`, joiden rungot löytyvät tehtäväkohjan `todo`-kansiosta. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
 
+
+Huom. ei konsolille virheilmoituksia.
 
 ### Lisätietoja
 
