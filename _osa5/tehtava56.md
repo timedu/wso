@@ -175,7 +175,11 @@ Kopio [tehtävän 5.4](../tehtava54) ratkaisun tiedostosta `controller.js` kontr
 
 #### 5. Datan talletus sovellukseen
 
-Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `service.js` metodien sisältö tiedoston `firebase.db.service.js` vastimetodeihin.
+Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `service.js` metodien sisältö tiedoston `firebase.db.service.js` vastimetodeihin. Lisää palveluun myös kopioitujen metodien viitaama muuttuja:
+
+{% highlight javascript %}
+    var henkilot = {};
+{% endhighlight %}
 
 Sovelluksen pitäisi nyt toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
 
@@ -187,7 +191,7 @@ Määrittele Firebase -projektiisi tunnistautumistiedot (ks. edellä [Autentikoi
 
 Varmista, että näkymän `search.view.html` *Login*- ja *Logout* -painikkeille on asettettu tapahtumakäsittelijät siten, että sisään- ja uloskirjautumisen voi suorittaa näiden painikkeiden avulla.
 
-Nyt klikattaessa *Login/Logout* painikkeita selaimen konsolille pitäisi ilmestyä teksti *User signed in* tai *User signed out*.
+Nyt, klikattaessa *Login/Logout* painikkeita, selaimen konsolille pitäisi ilmestyä teksti *User signed in* tai *User signed out*.
 
 
 *Lisätietoja*: Tehtäväpohjan tiedostossa `firebase.auth.service.js` on palvelu `Auth`, joka määrittelee tässä tarvittavat tunnistautumiseen liittyvät funktiot. Vakio `FIREBASE_USER` injektoidaan `Auth`-palveluun. Tiedostossa `app.js` tunnistautumisfunktioita on asetettu sovelluksen globaaliin näkyvyysalueeseen[^root-scope] (`$rootScope`). Samassa yhteydessä on määritelty tapahtumakäsittelijä, joka mm. tulostaa selaimen konsolille tekstin *User signed in* tai *User signed out* kirjautumisen tian vaihtuessa.
@@ -215,6 +219,39 @@ Pyrittäessä osoitteeseen, johon pääsy ei ole sallittu ilman kirjautumista, s
 [kohta-17.5]: {{site.baseurl}}/weso/#17.5-Turvallisuus-ennen-kaikkea:-authentikaatio-Firebasen-avulla
 
 #### 9. Tietojen haku Firebase -tietokannasta
+
+Tallenna Firebase -tietokantaan sen konsolin avulla jotakin lähtödataa edellä kohdan [Tietokanta](#tietokanta) esittämässä muodossa. 
+
+Muokkaa `Muistio` -palvelua (`firebase.db.service.db`) ja `SearchController` -kontrolleria (`search.controller.js`) siten, että Firebase-tietokannan tietoja näkyy *Hae numeroita* -näkymässä.
+
+*Vihjeitä*
+
+Sovellukseen upotettua dataa käytettäessä, tietojen haku kontrolleriin voidaan toteuttaa seuraavan periaatteen mukaan:
+
+{% highlight javascript %}
+  tiedot = kohde.hae(hakuEhto);
+{% endhighlight %}
+
+Kun tietojen haku tapahtuu verkon yli, paluudata ei ole välittömästi käytettävissä. Siten kohde, jolle pyyntö esitetään, tyypillisesti kutsuu sille välitettyä funktiota datan ollessa käytettävissä, esim. periaatetasolla seuraavasti:
+
+{% highlight javascript %}
+  kohde.hae(hakuEhto, function(paluuData){
+      tiedot = paluuData;
+  });
+{% endhighlight %}
+
+Kontrollerissa oletettavasti tietojen haku tässä toteutetaan tarkkailijassa (`$watch`). Tarkkailija laukeaa heti myös alussa, jolloin hakuehtona oleva henkilön nimi on määrittelemätön ([undefined][undefined]). Tietojen haku tässä tilanteessa kannattanee estää sopivalla if-rakenteella.
+
+[undefined]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined
+
+Tehtäväpohjan runko (`firebase.db.service.js`) ehdottaa käytettäväksi Firebase -rajapinnan [$firebaseObject][$firebaseObject] -oliota tietojen välitykseen sovelluksen ja tietokannan välillä. Olio tuhotaan kayttäjän ulos kirjautumisen yhteydessä (ks. rungon lopussa oleva koodi). Siten olio on luotava uudelleen, ennen kuin rajapintaa käytetään seuraavan kerran uudelleen. Olion luonti voidaan tässä tehdä `annaNumerot` -metodissa tilanteessa, jossa oliota ei vielä ole tai se on merkitty tuhotuksi.
+
+`$firebaseObject`-olion [$loaded][$loaded] -metodin avulla voidaan varmistua viitattujen  tietokannan tietojen olevan käytetävissä (ks. käsikirjan [ao. kohdan][$loaded] yhteydessä oleva esimerkki). Haettu data voidaan palauttaa `then` -metodilla, joka ketjutetaan `$loaded`-kutsun perään.  Ketjuun voi liittää myös virheenkäsittelyn, jonka osalta tässä voi hyödyntää  tehtäväpohjan `handleError` -funktiota.
+
+[$firebaseObject]: https://github.com/firebase/angularfire/blob/master/docs/reference.md#firebaseobject
+
+[$loaded]: https://github.com/firebase/angularfire/blob/master/docs/reference.md#loaded
+
 
 #### 10. Firebase -tietokannan tietojen ylläpito
 
