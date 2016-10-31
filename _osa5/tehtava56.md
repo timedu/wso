@@ -121,7 +121,81 @@ Pääsivun (`index.html`) `body`-elementin merkkaus:
 {% endhighlight %}
 
 
+### Ratkaisun laatimisen esimerkkivaiheistus
+
+#### *Lähtökohta*
+
+Kun tehtäväpohjan käynnistää, selaimen ikkunaan ilmestyy sivu, joka sisältää sovelluksen pääotsikon *Puhelinmuistio*. Selaimen konsolille tulee ilmoitus *Error: No Firebase App '[DEFAULT]' has been created - call Firebase App.initializeApp()*.
+
+#### *Vaihe I*
+
+Askelten 1-5 toteuttamisen jälkeen sovelluksen pitäisi toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
+
+#### 1. Sovelluksen kytkentä Firebase -projektiin.
+
+Kirjaa Firebase -projektisi tunnisteet ao. kohtaan tiedostossa `app.js`.
+ 
+Tämän jälkeen em. virheilmoitusta ei enää pitäsi tulla selaimen konsolille. Tosin konsolille ilmestynee teksti *User signed out.*, jonka tuottaa pohjassa valmiina oleva autentikaatioon liittyvä koodi.
+
+#### 2. Näkymien reititys
+
+Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `config.js` sisältö tiedostoon `route.config.js` ja tee kopioimaasi koodiin seuraavat *Hae numeroita* -näkymää koskevat muutokset:
+
+{% highlight javascript %}
+
+// ...
+
+    // controller: 'PuhController',
+    // templateUrl: 'view/search.html'
+    controller:  'SearchController',
+    templateUrl: 'todo/search.view.html'
+
+// ...
+
+{% endhighlight %}
+
+Sovelluksen käynnistyessä *Hae numeroita* -näkymän pitäisi tulla nyt esiin. *Lisää numero* -näkymään pääsee kirjaamalla jotakin sivulla olevaan *Nimi* -kenttään ja klikkaamalla sitten *uusi numero* -linkkiä. Näkymiin pääsee myös suorilla osoitteilla, esim.  `/W5E06/#/` , `/W5E06/#/joku`, `/W5E06/#/joku/add` ja `W5E06/#/joku/remove/123`. *Lisää numero*- ja *Poistetaanko numero?* -näkymät eivät sisällä painikkeita.
+
+#### 3. Ylläpito -näkymien painikkeet
+
+Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `directive.js` sisältö tiedostoon `button.directive.js`.
+
+ *Lisää numero*- näkymä sisältää nyt *Lisää*- ja *Peruuta* -painikkeet ja *Poistetaanko numero?* -näkymä sisältää *Poista*- ja *Peruuta* -painikkeet. Näkymissä olevien painikkeiden klikkaukset eivät vaihda esillä olevaa näkymää.
+
+#### 4. Ylläpito -näkymien painikkeiden aktivointi
+
+Kopio [tehtävän 5.4](../tehtava54) ratkaisun tiedostosta `controller.js` kontrollerien  sisältö tiedostoihin `add.remove.controller.js` (`AddController` ja `RemoveController`) ja `search.controller.js` (`SearchController`[^puh-controller]).
+
+[^puh-controller]: Tehtävässä 5.4 vastinkontrolleri on nimeltään `PuhController`.
+
+ *Lisää numero*- ja *Poistetaanko numero?* -näkymissä olevien painikkeiden klikkauksen pitäisi nyt tuoda esiin *Hae numeroita*- näkymän.
+
+#### 5. Datan talletus sovellukseen
+
+Kopio [tehtävän 5.4](../tehtava54) ratkaisusta tiedoston `service.js` metodien sisältö tiedoston `firebase.db.service.js` vastimetodeihin.
+
+Sovelluksen pitäisi nyt toimia [tehtävän 5.4](../tehtava54) kuvauksen mukaisesti.
+
+#### *Vaihe II*
+
+#### 6. Tunnistautuminen
+
+
+ks. [Autentikointi](#autentikointi)
+
+...
+
+#### *Vaihe III*
+
+
+#### 10. Palauta tehtävän ratkaisu
+
 **Palauta** tehtävän ratkaisusta tiedostot `route.config.js`, `firebase.db.service.js`, `search.controller.js` sekä `search.view.html`, joiden rungot löytyvät tehtäväkohjan `todo`-kansiosta. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
 
 
 ### Lisätietoja
+
+#### Alaviitteet
+
+
+
