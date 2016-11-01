@@ -63,6 +63,8 @@ Tämä on kopio [alkuperäisestä materiaalista](http://web-selainohjelmointi.gi
 
 * [jQuery API](http://api.jquery.com)
 
+[Less](http://lesscss.org/)  
+[Less.js](https://github.com/less/less.js)  
 [Moment](http://momentjs.com)  
 [Mustache](https://github.com/janl/mustache.js)  
 [Rubular - a Ruby regular expression editor](http://rubular.com/)   
