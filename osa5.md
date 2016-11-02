@@ -14,14 +14,11 @@ Tämä osa jatkaa vielä Angular-teemalla. Edellisen osan tehtävissä hyödynne
 
 > Isompi sovellus on usein jaettu useaan eri näkymään, jotka löytyvät eri poluista, kuten `/elokuvat`, `/elokuvat/1` ja `elokuvat/uusi`. Perinteisesti sovelluksen polut määritetään palvelinpuolen sovelluksessa, mutta kasva trendi on toteuttaa ainakin osa sovelluksen reitityksestä selainpuolella, jolloin sovelluksessa uuteen polkuun siirtyminen ei rasita niin paljon palvelinta. Näitä sovelluksia kutsutaan nimellä *Single-page application*.
 
-#### Kurssilukemisto
-
-[AngularJS][AngularJS] on esillä [lukemiston][weso] seuraavissa luvuissa:
-
-[12. Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS)   
-[13. Jatketaan keskustelua palvelimen kanssa: Firebase]({{site.baseurl}}/weso/#13-Jatketaan-keskustelua-palvelimen-kanssa:-Firebase)   
-[15. Reititys Angularissa]({{site.baseurl}}/weso/#15-Reititys-Angularissa)   
-[17. Suurempi Angular-sovellus: Elokuvakirjasto]({{site.baseurl}}/weso/#17-Suurempi-Angular-sovellus:-Elokuvakirjasto)   
+[AngularJS][AngularJS] on esillä [kurssilukemiston][weso] luvuissa
+[12. Sovelluksen rakenteen hallinta: AngularJS]({{site.baseurl}}/weso/#12-Sovelluksen-rakenteen-hallinta:-AngularJS),
+[13. Jatketaan keskustelua palvelimen kanssa: Firebase]({{site.baseurl}}/weso/#13-Jatketaan-keskustelua-palvelimen-kanssa:-Firebase), 
+[15. Reititys Angularissa]({{site.baseurl}}/weso/#15-Reititys-Angularissa) ja
+[17. Suurempi Angular-sovellus: Elokuvakirjasto]({{site.baseurl}}/weso/#17-Suurempi-Angular-sovellus:-Elokuvakirjasto).   
 
 
 #### Tehtävät
