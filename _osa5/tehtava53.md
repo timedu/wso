@@ -81,7 +81,7 @@ PuhApp.directive('wsoBtn', function (WSO_BTN) {
 
 {% endhighlight %}
 
-Direktivi otsikoi painonapin sekä asettaa sille `click`-tapahtuman käsittelijän. 
+Direktiivi otsikoi painonapin sekä asettaa sille `click`-tapahtuman käsittelijän. 
 
 Painikkeiden otsikot määrittelee `WSO_BTN`-olio, jolle `index.html` asettaa arvon. Esim. jos painikkeella on `wso-btn`-direktiivi ja sitä vastaavan attribuurin arvona on `add`, painikkeelle haetaan avaimella `add` otsikkoa oliosta `WSO_BTN`. Jos otsikkotekstiä ei löydy, otsikoksi asetetaan `add` so. `wso-btn`-attribuutin arvo.
 
@@ -126,6 +126,8 @@ Pääsivun viittaamista tiedostoista `template.html` on pohjassa valmiina. Tiedo
 
 
 ### Lisätietoja
+
+[Tehtävään liittyvä keskustelu](https://moodle2.tut.fi/mod/forum/discuss.php?d=69661)
 
 AngularJS -direktiivejä käsitellään lyhyesti kurssilukemiston [kohdassa 12.6][weso-12.6]. Laajempi esitys asiasta löytyy AngularJS:n [kehittäjän oppaasta][guide].
 

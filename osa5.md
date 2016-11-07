@@ -4,7 +4,7 @@ permalink: /osa5/index.html
 title: 5. Kirjastoista - AngularJS (II)
 ---
 
-Kurssin [edellisessä osassa](../osa4) tutustuttiin jo [AngularJS][AngularJS] -sovelluskehytseen. Todettiin mm., että Agularissa tiedot siirtyvät ilman ohjelmointia mallin ja näkymän välillä kontrollerijohtaisella näkyvyysalueella, johon voi sisällyttää myös näkymästä kutsuttavissa olevaa toiminnallisuutta. Mallin datalle asetettiin myös tarkkailijoita, jotka reagoivat mallin datan muutoksiin.
+Kurssin [edellisessä osassa](../osa4) tutustuttiin jo [AngularJS][AngularJS] -sovelluskehykseen. Todettiin mm., että Agularissa tiedot siirtyvät ilman ohjelmointia mallin ja näkymän välillä kontrollerijohtaisella näkyvyysalueella, johon voi sisällyttää myös näkymästä kutsuttavissa olevaa toiminnallisuutta. Mallin datalle asetettiin myös tarkkailijoita, jotka reagoivat mallin datan muutoksiin.
 
 [AngularJS]: https://angularjs.org
 

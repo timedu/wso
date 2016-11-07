@@ -66,7 +66,7 @@ Tiedostot `controller.js` ja `config.js` tulee laatia pohjassa oleviin runkoihin
 
 ### Lisätietoja
 
-AngularJS -direktiivejä käsitellään lyhyesti kurssilukemiston [luvussa 15][weso-15]. 
+AngularJS:n reititystä käsitellään lyhyesti kurssilukemiston [luvussa 15][weso-15]. 
 
 [weso-15]: {{site.baseurl}}/weso/#15-Reititys-Angularissa
 
