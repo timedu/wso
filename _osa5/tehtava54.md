@@ -62,8 +62,6 @@ Tiedostot `controller.js` ja `config.js` tulee laatia pohjassa oleviin runkoihin
 **Palauta** tehtävästä tiedostot `controller.js` ja `config.js`. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
 
 
-**Palauta** tehtävästä tiedosto `app.js`. Varmista ennen palautusta, että sovellus toimii odotetusti. Jos pohjakoodi sisältää testejä, varmista myös niiden läpimeno ilman virheilmoituksia.
-
 ### Lisätietoja
 
 AngularJS:n reititystä käsitellään lyhyesti kurssilukemiston [luvussa 15][weso-15]. 
