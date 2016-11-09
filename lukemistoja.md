@@ -56,6 +56,7 @@ Tämä on kopio [alkuperäisestä materiaalista](http://web-selainohjelmointi.gi
 * [AngularFire Guide](https://github.com/firebase/angularfire/blob/master/docs/guide/README.md)
  
 [Angular Validation: Match](https://github.com/TheSharpieOne/angular-validation-match)   
+[Bootstrap](http://getbootstrap.com)  
 [Jasmine](http://jasmine.github.io)  
 [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)  
 [Firebase](https://firebase.google.com)   
@@ -64,7 +65,10 @@ Tämä on kopio [alkuperäisestä materiaalista](http://web-selainohjelmointi.gi
 * [jQuery API](http://api.jquery.com)
 
 [Less](http://lesscss.org/)  
-[Less.js](https://github.com/less/less.js)  
+
+* [Less.js](https://github.com/less/less.js)  
+* [Online LESS Compiler](http://winless.org/online-less-compiler)  
+
 [Moment](http://momentjs.com)  
 [Mustache](https://github.com/janl/mustache.js)  
 [Rubular - a Ruby regular expression editor](http://rubular.com/)   

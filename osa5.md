@@ -30,7 +30,7 @@ Tämän osan tehtävissä palataan jo edellisissä osissa esillä olleeseen puhe
 [Tehtävä 5.3 Puhelinmuistio: Directive](tehtava53)   
 [Tehtävä 5.4 Puhelinmuistio: Routing](tehtava54)   
 [Tehtävä 5.5 Hello Firebase](tehtava55)   
-[Tehtävä 5.6 Puhelinmuistio: Firebase](tehtava56)   
+Tehtävä 5.6 Puhelinmuistio: Firebase ([Osa 6](../osa6))   
 
 [Tehtävä 5.1](tehtava51) kertaa jo [kurssin edellisessä osassa](../osa4) esiin tulleita asioita. Tehtävässä muokataan aikaisemmin toteutettu sovellus siten, että sen näkymä ja kontrolleri on toteutettu Angularilla. [Tehtävässä 5.2](tehtava52) sovelluksen dataa ylläpitävästä Muistio-moduulista laaditaan erillinen palvelu, joka injektoidaan kontrollerin käyttöön. [Tehtävä 5.3](tehtava53) esittelee, miten direktiivin avulla voidaan määritellä käyttöliittymässä olevan elementin ominaisuuksia. Tehtävässä laadittava, sovelluksen painikkeisiin liitettävä, direktiivi määrää panikkeen otsikon ja samalla klikkaukseen liityvän käsittelijän.
 

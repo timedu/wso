@@ -39,6 +39,9 @@ collections:
   osa5:
     output: true
     permalink: /:collection/:path/
+  osa6:
+    output: true
+    permalink: /:collection/:path/
 
 
 #
