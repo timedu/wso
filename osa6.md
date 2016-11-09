@@ -35,8 +35,7 @@ Käyttöliittymäteemoja käsitellään [kurssilukemiston][weso] luvuissa
 
 #### Tehtävät
 
-[Tehtävä 5.6 Puhelinmuistio: Firebase](tehtava56) (ks. [Osa 5](../osa5))
-
-Tehtävä 6.1 Bootstrap-elokuvat   
+[Tehtävä 5.6 Puhelinmuistio: Firebase](tehtava56) (ks. [osa 5](../osa5))
+[Tehtävä 6.1 Bootstrap-elokuvat](tehtava61)   
 [Tehtävä 6.2 Responsiivisuus](tehtava62)   
 [Tehtävä 6.3 Less-navigaatio](tehtava63)   
