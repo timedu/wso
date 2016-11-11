@@ -316,6 +316,7 @@ Datan muutos olioon hoituu taulukkonotaatiolla. Esim. uuden numeron lisääminen
 
 ### Lisätietoja
 
+[Tehtävään liittyvä keskustelu](https://moodle2.tut.fi/mod/forum/discuss.php?d=70318)   
 [Firebase -dokumentaatio](https://firebase.google.com/docs/)   
 [AngularFire API Reference](https://github.com/firebase/angularfire/blob/master/docs/reference.md)   
 [AngularFire Guide](https://github.com/firebase/angularfire/blob/master/docs/guide/README.md)   
