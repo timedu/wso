@@ -1,7 +1,7 @@
 ---
 layout: sivu
 title: Teht채v채 7.5
-exercise_upload_id: 
+exercise_upload_id: 294732
 exercise_template_name: W7E05.CalcGeolocation
 ---
 
@@ -15,6 +15,9 @@ Teht채v채pohjassa on AngularJS -pohjainen laskin -sovellus (vrt. esim. [Teht채v�
 
 ### Palautettava aineisto
 
+**Palauta** teht채v채st채 `todo` -hakemiston tiedostot `geo_service.js` ja `geo_controller.js`. 
 
 ### Lis채tietoja
+
+<http://diveintohtml5.info/geolocation.html>
 

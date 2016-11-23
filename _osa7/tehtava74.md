@@ -1,7 +1,7 @@
 ---
 layout: sivu
 title: Tehtävä 7.4
-exercise_upload_id: 
+exercise_upload_id: 294731
 exercise_template_name: W7E04.CalcLogWS
 ---
 
@@ -15,6 +15,10 @@ Tehtäväpohjassa on AngularJS -pohjainen laskin -sovellus. Täydennä sitä nii
 
 ### Palautettava aineisto
 
+**Palauta** tehtävästä `todo` -hakemiston tiedostot `log_service.js` ja `logframe.js`. 
 
 ### Lisätietoja
 
+<http://www.websocket.org/echo.html>
+
+<https://kaazing.com/2015/01/15/public-websocket-endpoints-sandbox-by-kaazing/>
