@@ -27,7 +27,9 @@ Seuraavassa on ote projektin tiedostorakenteesta:
 - index.html    
 ~~~
 
-Sijaintitietojen käsittely on itsenäinen osa sovellusta. *GeoController* (`geo_controller.js`) toimittaa sijaintitiedot käyttöliittymään hyödyntäen palvelua *GeoService* (`geo_service.js`).
+Sijaintitietojen käsittely on itsenäinen osa sovellusta[^1]. *GeoController* (`geo_controller.js`) toimittaa sijaintitiedot käyttöliittymään hyödyntäen palvelua *GeoService* (`geo_service.js`).
+
+[^1]: Laskin on tehtävässä lähinnä rekvisiitan asemassa.
 
 ### Palautettava aineisto
 
@@ -42,4 +44,6 @@ Sijaintitietojen käsittely on itsenäinen osa sovellusta. *GeoController* (`geo
 <https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation>
 
 <http://html5doctor.com/finding-your-position-with-geolocation/>
+
+#### Alaviitteet
 

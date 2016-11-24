@@ -7,9 +7,12 @@ exercise_template_name: W6E01.BootstrapElokuvat
 
 ## Bootstrap-elokuvat 
 
-Tämä tehtävä on muokattu kurssilukemiston [tehtävästä 47][tehtava47].
+Tämä tehtävä on muokattu kurssilukemiston [tehtävästä 47][tehtava47][^huom].
 
 [tehtava47]: {{site.baseurl}}/weso/#vk-6-t47
+
+[^huom]: Toisin kuin alkuperäisessä tehtävässä tässä ei tarvitse ladata Bootstrap -lähdekoodia osaksi projektin tiedostokokonaisuutta. Tarvittavat Bootstrapin -tyylit latautuvat verkon yli, kun tiedoston `index.html` sisältämän ao. `link` -elementin ympäriltä poistetaan kommenttimerkit.
+
 
 Tehtäväpohjassa on *AngularJS* -pohjainen sovellus elokuvien ylläpitoon. Muokkaa sovelluksen käyttöliittymä *Bootstrap* -kirjaston tuella kuvien 1-3 mukaiseksi.
 
