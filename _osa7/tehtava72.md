@@ -32,7 +32,9 @@ Toteuta *lokipalvelun* `log`-metodi niin, että se tallettaa sille välitetyn la
 
 [^1]: Muistipaikan avain injektoidaan palveluun vakiossa `STORAGE_KEY`, jolle asetetaan arvo tiedostossa `app.js`. 
 
-Täydennä tiedoston `logframe.js` koodia niin, että se lukee selaimen istuntokohtaisesta muistista sinne talletetun laskutoimituksen ja esittää sen sivulla (`logframe.html`) hyödyntäen pohjassa olevaa funktiota `createLogElement` aina, kun ao. muistipaikan sisältö muuttuu.
+Täydennä tiedoston `logframe.js` koodia niin, että se lukee selaimen istuntokohtaisesta muistista sinne talletetun laskutoimituksen ja esittää sen sivulla (`logframe.html`) hyödyntäen pohjassa olevaa funktiota `createLogElement` aina, kun ao. muistipaikan sisältö muuttuu[^2].
+
+[^2]: Jos sama laskutoimitus suoritetaan useamman kerran peräkkäin, laskutoimitus esiintyy muistin kautta toimivassa lokissa ainoastaan kerran.
 
 [iframe]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 
@@ -42,14 +44,14 @@ Täydennä tiedoston `logframe.js` koodia niin, että se lukee selaimen istuntok
 
 ### Lisätietoja ja vihjeitä
 
-Selaimen muistia esitellään esim. *Mark Pilgrimin* verkkokirjassa [Dive into HTML5][pilgrim]. Kirjan kohdassa [Using HTML5 Storage][pilgrim-storage] on esimerkkejä `localStorage` -oliosta mikä ei eroa käyttöperiaatteeltaan tässä sovellettavasta `sessionStorage` -oliosta[^2]. [Mozillan kehittäjäsivustolla][mdn] asiaa käsitellään kohdassa [Web Storage API][wsapi]. 
+Selaimen muistia esitellään esim. *Mark Pilgrimin* verkkokirjassa [Dive into HTML5][pilgrim]. Kirjan kohdassa [Using HTML5 Storage][pilgrim-storage] on esimerkkejä `localStorage` -oliosta mikä ei eroa käyttöperiaatteeltaan tässä sovellettavasta `sessionStorage` -oliosta[^3]. [Mozillan kehittäjäsivustolla][mdn] asiaa käsitellään kohdassa [Web Storage API][wsapi]. 
 
 [pilgrim]: http://diveintohtml5.info/
 [pilgrim-storage]: http://diveintohtml5.info/storage.html#methods
 [mdn]: https://developer.mozilla.org/
 [wsapi]: https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
 
-[^2]: *Local Storagen* sisältö säilyy vaikka selain suljetaan mutta *Session Storagen* ei.
+[^3]: *Local Storagen* sisältö säilyy vaikka selain suljetaan mutta *Session Storagen* ei.
 
 
 #### Alaviitteet
