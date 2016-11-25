@@ -27,7 +27,6 @@ Sijaintitietojen käsittely on itsenäinen osa sovellusta[^1]. *GeoController* (
 
 [^1]: Laskin on tehtävässä lähinnä rekvisiitan asemassa.
 
-
 {% highlight javascript %}
 
 CalcApp.service('GeoService', function ($window, GEO_TIMEOUT) {

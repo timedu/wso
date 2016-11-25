@@ -45,6 +45,8 @@ Palauta oletusarvoonsa tyylit koskien elementtejä, jotka asetit gridiin. Tämä
 
 ### Lisätietoja
 
+[Tehtävään liittyvä keskustelu](https://moodle2.tut.fi/mod/forum/discuss.php?d=71382)
+
 Responsiivisuus on esillä kurssilukemiston [luvussa 19][weso-19]. Esim. Firefox-selaimessa on mukana [responsiivisen suunnittelun apuväline][responsive].
 
 [weso-19]: {{site.baseurl}}/weso/#19-Responsiivinen-web-suunnittelu
